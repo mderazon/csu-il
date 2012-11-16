@@ -7,8 +7,15 @@ lib-cov
 *.pid
 *.gz
 
+
 pids
 logs
 results
 
 npm-debug.log
+node_modules
+# OS generated files #
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
