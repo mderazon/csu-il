@@ -1,30 +1,41 @@
-var port = process.env.PORT || 8888;
+﻿var port = process.env.PORT || 8888;
 var app = require('./app').init(port);
 
 var locals = {
         title: 		 'CSNC',
         description: 'Node Express HTML5 & CSS3',
-        author: 	 'Michael D'
+        author: 	 'Michael D',
+		addDisqus:	 false
     };
-
+var locals_lessons = {
+        title: 		 'CSNC',
+        description: 'Node Express HTML5 & CSS3',
+        author: 	 'Michael D',
+		addDisqus:	 true,
+		layout:		 'layout-lessons'
+    };
 app.get('/', function(req,res){
     locals.date = new Date().toLocaleDateString();
+	
     res.render('home.ejs', locals);
 });
 
-app.get('/about', function(req,res){
-    locals.date = new Date().toLocaleDateString();
-    res.render('about.ejs', locals);
-});
-app.get('/contact', function(req,res){
-    locals.date = new Date().toLocaleDateString();
-    res.render('contact.ejs', locals);
-});
+function lessonsRouter (req, res, next)
+{
+    var lesson = req.params.lesson;
+    res.render('lessons/' + lesson + '.ejs', locals_lessons);
+}
 
-app.get('/lesson', function(req,res){
-    locals.date = new Date().toLocaleDateString();
-    res.render('lesson.ejs', locals);
-});
+app.get('/lessons/:lesson*', lessonsRouter);
+
+
+function viewsRouter (req, res, next)
+{
+    var controllerName = req.params.controllerName;
+    res.render(controllerName + '.ejs', locals_lessons);
+}
+app.get('/:controllerName', viewsRouter);
+
 
 /* The 404 Route (ALWAYS Keep this as the last route) */
 app.get('/*', function(req, res){
