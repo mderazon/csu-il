@@ -5,16 +5,19 @@ var locals = {
         title: 		 'CSNC',
         description: 'Node Express HTML5 & CSS3',
         author: 	 'Michael D',
-		addDisqus:	 false
+		layout: '/layout',
+		addDisqus:	 false,
+		controller:	'home'
     };
 // copy locals for lessons
 var locals_lessons = JSON.parse(JSON.stringify(locals));
 locals_lessons.addDisqus = true;
-locals_lessons.layout = 'layout-lessons';
+locals_lessons.layout = '/lessons/layout';
+locals_lessons.controller = 'lessons';
 
-	
 app.get('/', function(req,res){
-    locals.date = new Date().toLocaleDateString();	
+    locals.date = new Date().toLocaleDateString();
+	locals.controller = 'home';
     res.render('home.ejs', locals);
 });	
 	
@@ -26,15 +29,20 @@ function lessonsRouter (req, res, next)
 
 app.get('/lessons/:lesson', lessonsRouter);
 
-
-function viewsRouter (req, res, next)
+function homeRouter (req, res, next)
 {
-    var controllerName = req.params.controllerName;
-    res.render(controllerName + '.ejs', locals);
+	var controllerName = req.params.controllerName;
+	locals.controller = controllerName;
+	if (controllerName == 'about' || controllerName == 'contact' || controllerName == 'lessons') {
+		res.render(controllerName + '.ejs', locals);
+	}
+	else {
+		
+		next();
+	}
 }
-app.get('/:controllerName', viewsRouter);
 
-
+app.get('/:controllerName', homeRouter);
 
 /* The 404 Route (ALWAYS Keep this as the last route) */
 app.get('/*', function(req, res){

@@ -12,7 +12,7 @@ exports.init = function(port) {
     	app.use(express.methodOverride());
     	app.use(express.static(__dirname + '/static'));
     	
-		// remove trailing slash in url
+		// add middleware to remove trailing slash in urls
 		app.use(function(req, res, next) {
 			if(req.url.substr(-1) == '/' && req.url.length > 1) {
 				res.redirect(301, req.url.slice(0, -1));
