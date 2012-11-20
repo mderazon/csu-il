@@ -1,1 +1,25 @@
-﻿
+{
+	"lessons" :[
+	{
+	  "title"			: "שיעור 1",
+	  "description"		: "שיעור ראשון - שלום",
+	  "lesson_path"		: "/lessons/lesson01",
+	  "picture-file"	: "somefile.jpg",
+	  "date"			: "11/11/11"
+	},
+	{
+	  "title"			: "שיעור 2",
+	  "description"		: "שיעור שני - hello",
+	  "lesson_path"		: "/lessons/lesson01",	  
+	  "picture-file"	: "somefile.jpg",
+	  "date"			: "11/11/11"
+	},
+	{
+	  "title"			: "שיעור 3",
+	  "description"		: " שיעור שלישי - hola",
+	  "lesson_path"		: "/lessons/lesson01",	  
+	  "picture-file"	: "somefile.jpg",
+	  "date"			: "11/11/11"
+	}
+	]
+}

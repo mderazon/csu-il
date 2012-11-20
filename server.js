@@ -1,13 +1,13 @@
 ﻿var port = process.env.PORT || 8888;
 var app = require('./app').init(port);
+var lessons = require('./lessons');
 
 var locals = {
         title: 		 'CSNC',
         description: 'Node Express HTML5 & CSS3',
         author: 	 'Michael D',
-		layout: '/layout',
-		addDisqus:	 false,
-		controller:	'home'
+		layout:		 'layout',
+		controller:  'home' // this is for active navbar item in layout
     };
 // copy locals for lessons
 var locals_lessons = JSON.parse(JSON.stringify(locals));
@@ -21,28 +21,25 @@ app.get('/', function(req,res){
     res.render('home.ejs', locals);
 });	
 	
-function lessonsRouter (req, res, next)
-{
-    var lesson = req.params.lesson;
-    res.render('lessons/' + lesson + '.ejs', locals_lessons);
-}
-
-app.get('/lessons/:lesson', lessonsRouter);
 
 function homeRouter (req, res, next)
 {
 	var controllerName = req.params.controllerName;
 	locals.controller = controllerName;
-	if (controllerName == 'about' || controllerName == 'contact' || controllerName == 'lessons') {
+	if (controllerName == 'about' || controllerName == 'contact') {
 		res.render(controllerName + '.ejs', locals);
 	}
-	else {
-		
+	else{
 		next();
 	}
 }
 
 app.get('/:controllerName', homeRouter);
+
+app.get('/lessons', lessons.get_all_lessons_handler);
+
+app.get('/lessons/:lesson', lessons.get_lesson_handler);
+
 
 /* The 404 Route (ALWAYS Keep this as the last route) */
 app.get('/*', function(req, res){
