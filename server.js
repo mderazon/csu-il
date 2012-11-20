@@ -7,13 +7,11 @@ var locals = {
         author: 	 'Michael D',
 		addDisqus:	 false
     };
-var locals_lessons = {
-        title: 		 'CSNC',
-        description: 'Node Express HTML5 & CSS3',
-        author: 	 'Michael D',
-		addDisqus:	 true,
-		layout:		 'layout-lessons'
-    };
+// copy locals for lessons
+var locals_lessons = JSON.parse(JSON.stringify(locals));
+locals_lessons.addDisqus = true;
+locals_lessons.layout = 'layout-lessons';
+
 	
 app.get('/', function(req,res){
     locals.date = new Date().toLocaleDateString();	
@@ -32,7 +30,7 @@ app.get('/lessons/:lesson', lessonsRouter);
 function viewsRouter (req, res, next)
 {
     var controllerName = req.params.controllerName;
-    res.render(controllerName + '.ejs', locals_lessons);
+    res.render(controllerName + '.ejs', locals);
 }
 app.get('/:controllerName', viewsRouter);
 
