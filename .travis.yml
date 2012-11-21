@@ -14,6 +14,7 @@ after_script:
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
   - echo "   CheckHostIP no" >> ~/.ssh/config
   - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+  - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   # Clear your current Heroku SSH keys:
   - heroku keys:clear
   # Add a new SSH key to Heroku
