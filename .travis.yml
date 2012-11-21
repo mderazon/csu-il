@@ -1,7 +1,6 @@
 ﻿language: node_js
 node_js:
-  - 0.8.x
-
+  - 0.8
 after_script:
   # Install the Heroku package (or the Heroku toolbelt)
   - npm install heroku
