@@ -1,6 +1,6 @@
-language: node_js
- node_js:
-   - 0.8
+﻿language: node_js
+node_js:
+  - 0.8
 
 after_script:
   # Install the Heroku package (or the Heroku toolbelt)
@@ -8,7 +8,7 @@ after_script:
   # Add your Heroku git repo:
   - git remote add heroku git@heroku.com:csu-il.git
   # Add your Heroku API key:
-  - export HEROKU_API_KEY=970fd9c776e5c050899b0a3f1b4186b266c3e82a 
+  - export HEROKU_API_KEY=970fd9c776e5c050899b0a3f1b4186b266c3e82a
   # Turn off warnings about SSH keys:
   - echo "Host heroku.com" >> ~/.ssh/config
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
@@ -20,4 +20,3 @@ after_script:
   - yes | heroku keys:add
   # Push to Heroku!
   - yes | git push heroku master
-
