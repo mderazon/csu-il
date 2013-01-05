@@ -8,7 +8,7 @@ after_script:
   # Add your Heroku git repo:
   - git remote add heroku git@heroku.com:csu-il.git
   # Add your Heroku API key:
-  - export HEROKU_API_KEY=9cafe8cbaa3316defbbeedceb76d1c2362ec541d
+  - export HEROKU_API_KEY=0e591d040c8b9acbd5f917f6e7565cb10ba2f7ad
   # Turn off warnings about SSH keys:
   - echo "Host heroku.com" >> ~/.ssh/config
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
