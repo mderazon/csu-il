@@ -1,15 +1,14 @@
-var express = require('express'),
-    partials = require('express-partials'),
-    app = express();
+var express = require('express');
+var app = express();
 
 exports.init = function (port) {
-
     app.configure(function () {
         app.set('views', __dirname + '/views');
         app.set('view engine', 'ejs');
         app.use(express.bodyParser());
-        app.use(partials());
+        //app.use(partials());
         app.use(express.methodOverride());
+        app.use(express.logger());
         app.use(express.static(__dirname + '/static'));
 
         // add middleware to remove trailing slash in urls
