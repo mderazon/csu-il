@@ -1,25 +1,28 @@
 {
 	"lessons" :[
 	{
-	  "title"			: "שיעור 1",
-	  "description"		: "שיעור ראשון - שלום",
-	  "lesson_path"		: "/lessons/lesson01",
-	  "picture-file"	: "somefile.jpg",
-	  "date"			: "11/11/11"
+	  "title"			: "נקודות למחשבה",
+	  "description"		: "מספרים בינאריים",
+	  "lesson_path"		: "lessons/lesson01",
+	  "thumbnail_file"	: "thumbnail.jpg",
+	  "date"			: "01/10/2009",
+	  "author"			: "שמעון שוקן"
 	},
 	{
-	  "title"			: "שיעור 2",
-	  "description"		: "שיעור שני - hello",
-	  "lesson_path"		: "/lessons/lesson01",	  
-	  "picture-file"	: "somefile.jpg",
-	  "date"			: "11/11/11"
+	  "title"			: "קסמי קלפים",
+	  "description"		: "שיטות לאיתור ותיקון טעויות",
+	  "lesson_path"		: "lessons/lesson02",	  
+	  "thumbnail_file"	: "thumbnail.png",
+	  "date"			: "01/09/2009",
+	  "author"			: "שמעון שוקן"
 	},
 	{
-	  "title"			: "שיעור 3",
-	  "description"		: " שיעור שלישי - hola",
-	  "lesson_path"		: "/lessons/lesson01",	  
-	  "picture-file"	: "somefile.jpg",
-	  "date"			: "11/11/11"
+	  "title"			: "משחקי פיקסלים",
+	  "description"		: "ייצוג ועיבוד תמונות",
+	  "lesson_path"		: "lessons/lesson03",	  
+	  "thumbnail_file"	: "thumbnail.jpg",
+	  "date"			: "01/08/2009",
+	  "author"			: "שמעון שוקן"
 	}
 	]
 }

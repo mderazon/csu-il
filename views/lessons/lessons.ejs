@@ -1,24 +1,29 @@
 ﻿<% include ../head %>
 
 <div class="row">
-	<div class="span10">
-		<h1>ברוכים הבאים!</h1>
-		<br />
-		<h2>
-			כאן יוצגו כל השיעורים <br />
-		</h2>
-	</div>
-</div>	
+  <div class="span10">
+    <h1>ברוכים הבאים!</h1>
+    <br />
+    <h2>
+      כאן יוצגו כל השיעורים <br />
+    </h2>
+  </div>
+</div>  
 <br />
 
 <% for (var i=0; i<lessons.length; i++) {%>
 <div class="well">
-	
-		<div style="height:100px">
-			<a href="<%= lessons[i].lesson_path %>"><h1><%= lessons[i].title %></h1></a>
-			<h4><%=lessons[i].description %></h4>
-		</div>
-	
+  
+    <div class="row-fluid">
+      <div class="span8" style="height:100px">
+        <a href="<%= lessons[i].lesson_path %>"><h1><%= lessons[i].title %></h1></a>
+        <h3><%=lessons[i].description %></h3>
+      </div>
+      <div class="span4">
+        <img src="/img/<%= lessons[i].lesson_path %>/<%=lessons[i].thumbnail_file %>" height="140" width="140">
+      </div>
+    </div>
+  
 </div>
 <% } %>
 
