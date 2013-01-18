@@ -1,8 +1,6 @@
 [![Build Status](https://travis-ci.org/csu-il/csnc.png?branch=master)](https://travis-ci.org/csu-il/csnc.png?branch=master)
 
-## csu-il ##
-
-Computer Science Unplugged IL
+## Computer Science Unplugged IL ##
 
 Website: [http://csu-il.heroku.com](http://csu-il.heroku.com)
 
