@@ -5,8 +5,7 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "3.x",
-	"ejs": ">=0.0.0",
-	"express-partials": ">=0.0.0"
+	  "ejs": ">=0.0.0"
   },
   "repository": {
     "type": "git",
