@@ -6,7 +6,7 @@ Computer Science Unplugged IL
 
 Website: [http://csu-il.heroku.com](http://csu-il.heroku.com)
 
-----------
+## ##
 
 Based on [Computer Science Unplugged](http://csunplugged.org/) program. Designed to help teach basic principals of computer science to kids (but also grown ups).
 
@@ -30,7 +30,6 @@ On the technical side, the website is built with [Node.js](http://nodejs.org/) a
 
 ## Adding lessons ##
 
-----------
 
 I decided the best way would be writing the lessons in HTML, since it's ubiquitous and most of the other approaches didn't have good Hebrew support. The knowledge of html required is very basic, you just have to write every paragraph with `<p>` and occasionally add `<img>`, `<table>` etc. Basic stuf...
 
