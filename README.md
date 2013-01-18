@@ -1,12 +1,10 @@
 [![Build Status](https://travis-ci.org/csu-il/csnc.png?branch=master)](https://travis-ci.org/csu-il/csnc.png?branch=master)
 
-# csu-il #
+## csu-il ##
 
 Computer Science Unplugged IL
 
 Website: [http://csu-il.heroku.com](http://csu-il.heroku.com)
-
-## ##
 
 Based on [Computer Science Unplugged](http://csunplugged.org/) program. Designed to help teach basic principals of computer science to kids (but also grown ups).
 
