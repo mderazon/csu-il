@@ -14,9 +14,8 @@ All of the lessons are in Hebrew, most of them were translated by [Benny Chor](h
 
 
 
-# Contribution #
+## Contribution ##
 
-----------
 
 If you want to contribute you came to the right place !
 
@@ -29,7 +28,7 @@ On the technical side, the website is built with [Node.js](http://nodejs.org/) a
 - Anything else.
 
 
-# Adding lessons #
+## Adding lessons ##
 
 ----------
 
