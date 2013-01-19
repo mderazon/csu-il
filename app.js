@@ -9,7 +9,7 @@ exports.init = function (port) {
         //app.use(partials());
         app.use(express.methodOverride());
         app.use(express.logger());
-        app.use(express.static(__dirname + '/static'));
+        app.use(express.static(__dirname + '/public'));
 
         // add middleware to remove trailing slash in urls
         app.use(function (req, res, next) {
