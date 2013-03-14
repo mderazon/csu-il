@@ -1,54 +1,45 @@
 var express = require('express');
-var app = express();
+var slashes = require('connect-slashes');
+
 
 exports.init = function (port) {
-    app.configure(function () {
-        app.set('views', __dirname + '/views');
-        app.set('view engine', 'ejs');
-        app.use(express.bodyParser());
-        //app.use(partials());
-        app.use(express.methodOverride());
-        app.use(express.logger());
-        app.use(express.static(__dirname + '/public'));
+  var app = express();
+  app.use(express.static(__dirname + '/public'));
+  // add middleware to remove trailing slash in urls
+  app.use(slashes(false));
+  app.set('views', __dirname + '/views')
+  app.set('view engine', 'ejs');
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(express.logger());
+  app.enable("jsonp callback");
+  if ('development' == app.get('env')) {
+    app.use(express.errorHandler({
+      dumpExceptions: true,
+      showStack: true
+    }));
+    app.use(express.logger({
+      format: ':method :url'
+    }));
+  }
 
-        // add middleware to remove trailing slash in urls
-        app.use(function (req, res, next) {
-            if (req.url.substr(-1) == '/' && req.url.length > 1) {
-                res.redirect(301, req.url.slice(0, -1));
-            }
-            next();
-        });
-        app.use(app.router);
-        app.enable("jsonp callback");
+  if ('production' == app.get('env')) {
+    app.use(express.errorHandler());
+  }
+
+  app.use(function (err, req, res, next) {
+    console.log('Oops, something went wrong');
+    res.render('500.ejs', {
+      locals: {
+        error: err
+      },
+      status: 500
     });
+  });
 
+  app.listen(port);
 
-    app.configure('development', function () {
-        app.use(express.errorHandler({
-            dumpExceptions: true,
-            showStack: true
-        }));
-        app.use(express.logger({
-            format: ':method :url'
-        }));
-    });
+  console.log("Listening on port %d in %s mode", port, app.settings.env);
 
-    app.configure('production', function () {
-        app.use(express.errorHandler());
-    });
-
-    app.use(function (err, req, res, next) {
-        res.render('500.ejs', {
-            locals: {
-                error: err
-            },
-            status: 500
-        });
-    });
-
-    app.listen(port);
-
-    console.log("Listening on port %d in %s mode", port, app.settings.env);
-
-    return app;
+  return app;
 }

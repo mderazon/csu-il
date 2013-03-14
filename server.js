@@ -1,41 +1,48 @@
 var port = process.env.PORT || 8888;
 var app = require('./app').init(port);
-var lessons = require('./lessons');
+var markdown = require('./markdown');
+var lessons = require('./lessons.json').lessons;
 
-var locals = {
-    title: 'מדעי המחשב ללא מחשב',
-    description: 'Node Express HTML5 & CSS3',
-    author: 'Michael D',
-    add_disqus: 'false',
-    controller: 'home' // this is for active navbar item in layout
-};
+// app.use(function(req,res,next) {
+//     console.log('adding lessons to locals');
+//     res.locals.date = new Date().toLocaleDateString();
+//     res.locals.lessons = lessons;
+//     next();
+// });
+// app.use(app.router);
 
 app.get('/', function (req, res) {
-    locals.date = new Date().toLocaleDateString();
-    locals.controller = 'home';
-    res.render('home', locals);
+    console.log('controller is : home');
+    res.locals.controller = 'home';
+    res.render('home');
 });
 
-
-app.get('/:controllerName', function (req, res, next) {
-    var controllerName = req.params.controllerName;
-    locals.controller = controllerName;
-    if (controllerName == 'about' || controllerName == 'contact') {
-        res.render(controllerName, locals);
-    } else {
-        next();
-    }
+app.get('/:controller', function (req, res, next) {
+  var controller = req.params.controller;
+  console.log('controller is : '+ controller);
+  console.log(JSON.stringify(res.locals, null, 4));
+  if (controller == 'about' || controller == 'contact') {
+    res.locals.controller = controller;
+    res.render(controller);
+  } else {
+      next();
+  }
 });
 
-app.get('/lessons', lessons.get_all_lessons_handler);
+app.get('/lessons', function(req, res) {
+  res.locals.lessons = lessons;
+  console.log('controller is : lessons');
+  res.render('lessons');
+});
 
-app.get('/lessons/:lesson', lessons.get_lesson_handler);
-
+app.get('/lessons/:lesson', function(req, res) {
+    console.log('controller is : lesson');
+    res.locals.controller = 'lessons';
+    res.send('gimmie the lesson');
+});
 
 /* The 404 Route (ALWAYS Keep this as the last route) */
 app.get('/*', function (req, res) {
     console.log('got 404 request to ' + req.url);
-    res.render('404.ejs', {
-        layout: false
-    });
+    res.render('404');
 });

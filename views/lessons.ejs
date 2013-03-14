@@ -1,4 +1,4 @@
-﻿<% include ../head %>
+﻿<% include head %>
 
 <div class="row">
   <div class="span10">
@@ -20,11 +20,11 @@
         <h3><%=lessons[i].description %></h3>
       </div>
       <div class="span4">
-        <img src="/img/<%= lessons[i].lesson_path %>/<%=lessons[i].thumbnail_file %>" height="140" width="140">
+        <img src="/lessons/<%= lessons[i].lesson_path %>/<%=lessons[i].thumbnail_file %>" height="140" width="140">
       </div>
     </div>
   
 </div>
 <% } %>
 
-<% include ../foot %>
+<% include foot %>
