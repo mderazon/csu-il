@@ -11,16 +11,17 @@
 </div>  
 <br />
 
-<% for (var i=0; i<lessons.length; i++) {%>
+<% for (var l in lessons) {%>
+<% var lesson = lessons[l] %>
+<% var lesson_path = '/lessons/' + l %>
 <div class="well">
-  
-    <div class="row-fluid">
-      <div class="span8" style="height:100px">
-        <a href="<%= lessons[i].lesson_path %>"><h1><%= lessons[i].title %></h1></a>
-        <h3><%=lessons[i].description %></h3>
+  <div class="row-fluid">
+    <div class="span8" style="height:100px">
+      <a href="<%= lesson_path %>"><h1><%= lesson.title %></h1></a>
+      <h3><%=lesson.description %></h3>
       </div>
       <div class="span4">
-        <img src="/lessons/<%= lessons[i].lesson_path %>/<%=lessons[i].thumbnail_file %>" height="140" width="140">
+        <img src="<%= lesson_path %>/<%=lesson.thumbnail_file %>" height="140" width="140">
       </div>
     </div>
   

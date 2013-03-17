@@ -1,18 +1,12 @@
 var marked = require('marked');
 var fs = require('fs');
 
-
-module.exports = function(path, callback) {
-  fs.readFile("README.md", "ascii", function (err, data) {
+// give full path for file including the md extention
+module.exports = function(file, callback) {
+  fs.readFile(file, "ascii", function (err, data) {
     if (err) {
-        throw err;
+        return callback(err);
     }
     return callback(marked(data));
   });
 }
-
-//USE:
- // markdown('README', function(result) {
-    //     console.log(result);
-    //     res.send(result);
-    // });

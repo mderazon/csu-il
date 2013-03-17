@@ -1,26 +1,15 @@
 var port = process.env.PORT || 8888;
 var app = require('./app').init(port);
 var markdown = require('./markdown');
-var lessons = require('./lessons.json').lessons;
-
-// app.use(function(req,res,next) {
-//     console.log('adding lessons to locals');
-//     res.locals.date = new Date().toLocaleDateString();
-//     res.locals.lessons = lessons;
-//     next();
-// });
-// app.use(app.router);
+var lessons = require('./lessons.json');
 
 app.get('/', function (req, res) {
-    console.log('controller is : home');
     res.locals.controller = 'home';
     res.render('home');
 });
 
 app.get('/:controller', function (req, res, next) {
   var controller = req.params.controller;
-  console.log('controller is : '+ controller);
-  console.log(JSON.stringify(res.locals, null, 4));
   if (controller == 'about' || controller == 'contact') {
     res.locals.controller = controller;
     res.render(controller);
@@ -30,15 +19,28 @@ app.get('/:controller', function (req, res, next) {
 });
 
 app.get('/lessons', function(req, res) {
+  res.locals.controller = 'lessons';
   res.locals.lessons = lessons;
-  console.log('controller is : lessons');
   res.render('lessons');
 });
 
-app.get('/lessons/:lesson', function(req, res) {
-    console.log('controller is : lesson');
+app.get('/lessons/:name', function(req, res, next) {
     res.locals.controller = 'lessons';
-    res.send('gimmie the lesson');
+    var name = req.params.name;
+    var lesson = lessons[name];
+    if (!lesson) {
+      return next();
+    }
+    lesson.path = 'lessons/' + name;
+    lesson.file = lesson.path + '/' + name + '.md';
+    markdown(lesson.file, function(result, err) {
+      if (err) {
+        console.log(err);
+      }
+      lesson.body = result;
+      res.locals.lesson = lesson;
+      res.render('lesson');
+    });
 });
 
 /* The 404 Route (ALWAYS Keep this as the last route) */

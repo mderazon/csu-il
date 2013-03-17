@@ -1,28 +1,26 @@
 {
-	"lessons" :[
-	{
-	  "title"			: "נקודות למחשבה",
-	  "description"		: "מספרים בינאריים",
-	  "lesson_path"		: "lessons/lesson01",
-	  "thumbnail_file"	: "thumbnail.jpg",
-	  "date"			: "01/10/2009",
-	  "author"			: "שמעון שוקן"
-	},
-	{
-	  "title"			: "קסמי קלפים",
-	  "description"		: "שיטות לאיתור ותיקון טעויות",
-	  "lesson_path"		: "lessons/lesson02",	  
-	  "thumbnail_file"	: "thumbnail.png",
-	  "date"			: "01/09/2009",
-	  "author"			: "שמעון שוקן"
-	},
-	{
-	  "title"			: "משחקי פיקסלים",
-	  "description"		: "ייצוג ועיבוד תמונות",
-	  "lesson_path"		: "lessons/lesson03",	  
-	  "thumbnail_file"	: "thumbnail.jpg",
-	  "date"			: "01/08/2009",
-	  "author"			: "שמעון שוקן"
-	}
-	]
+	"lesson01" :
+		{
+		  "title"			: "נקודות למחשבה",
+	  	  "description"		: "מספרים בינאריים",
+	  	  "thumbnail_file"	: "thumbnail.jpg",
+	  	  "date"			: "01/10/2009",
+	  	  "author"			: "שמעון שוקן"
+		},
+	"lesson02" :
+		{
+		  "title"			: "קסמי קלפים",
+		  "description"		: "שיטות לאיתור ותיקון טעויות",
+		  "thumbnail_file"	: "thumbnail.png",
+		  "date"			: "01/09/2009",
+		  "author"			: "שמעון שוקן"
+		},
+	"lesson03" :
+		{
+		  "title"			: "משחקי פיקסלים",
+		  "description"		: "ייצוג ועיבוד תמונות",
+		  "thumbnail_file"	: "thumbnail.jpg",
+		  "date"			: "01/08/2009",
+		  "author"			: "שמעון שוקן"
+		}
 }

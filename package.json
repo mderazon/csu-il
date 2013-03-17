@@ -1,11 +1,12 @@
 {
   "author": "Michael Derazon",
   "name": "csu-il",
-  "description": "computer science unplugged il",
+  "description": "Computer science unplugged israel",
   "version": "0.0.1",
   "dependencies": {
     "express": "3.x",
-	  "ejs": ">=0.0.0"
+	  "ejs": "0.8.3",
+    "connect-slashes": "0.0.10"
   },
   "repository": {
     "type": "git",

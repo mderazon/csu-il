@@ -5,8 +5,12 @@ var slashes = require('connect-slashes');
 exports.init = function (port) {
   var app = express();
   app.use(express.static(__dirname + '/public'));
+  app.use('/lessons', express.static(__dirname + '/lessons', { redirect : false }));
   // add middleware to remove trailing slash in urls
   app.use(slashes(false));
+  app.use(express.logger({
+    format: ':method :url'
+  }));
   app.set('views', __dirname + '/views')
   app.set('view engine', 'ejs');
   app.use(express.bodyParser());
@@ -17,9 +21,6 @@ exports.init = function (port) {
     app.use(express.errorHandler({
       dumpExceptions: true,
       showStack: true
-    }));
-    app.use(express.logger({
-      format: ':method :url'
     }));
   }
 

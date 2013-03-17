@@ -4,13 +4,12 @@
 
   <div class="row">
     <div class="hero-unit">
-      <h1>נקודות למחשבה</h1>
-      <h2> מספרים בינאריים </h2>
+      <h1><%= lesson.title %></h1>
+      <h2><%= lesson.description %></h2>
     </div>
       <br />
     <div class="well">
-    	<% lesson %>
-
+    	<%- lesson.body %>
     </div>
   </div>
 </div>
