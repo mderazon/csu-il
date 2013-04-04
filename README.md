@@ -23,26 +23,25 @@ On the technical side, the website is built with [Node.js](http://nodejs.org/) a
 - Going through the lessons and constantly improve them.
 - Anything else.
 
+## Requirements ##
+- [Node.js](http://nodejs.org/)
 
-## Adding lessons ##
-
-
-I decided the best way would be writing the lessons in HTML, since it's ubiquitous and most of the other approaches didn't have good Hebrew support. The knowledge of html required is very basic, you just have to write every paragraph with `<p>` and occasionally add `<img>`, `<table>` etc. Basic stuf...
-
-Once you're done, put your lesson with all the image files (if you have) in `/views/lessons` under it's own folder. Next, update `/views/lessons/lessons.json` and add your lesson there. That's it, your done !
-
-Now fire up the website with node program : 
+## Installation and running ##
+Download a local copy of the code. 
+Install dependencies with `npm` :
+    
+    $ npm install
+Fire up the server :
 
     $ node server.js
     Listening on port 8888 in development mode
+Open your browser at `http://localhost:8888`.
 
-Check that everything works by going to `http://localhost:8888`
+## Adding lessons ##
+For simplicity, lessons are written in [Markdown](http://daringfireball.net/projects/markdown/syntax) and rendered to HTML on the fly. If Markdown syntax is not enough, you can use standard HTML tags like `<img>` or `<table>` inside the Markdown file and it should work just fine.
 
-**Whats up with all of the `.ejs` files ? Where's the HTML you promised ?**
-
-[EJS](http://embeddedjs.com/) stands for Embedded Javascript but don't worry about it. It's just like writing HTML, just rename your file ending to `.ejs` instead of `.html` and it will work. See an example for a lesson in the `/view/lessons` folder.
-
+Once you're done, put your lesson with all the image files (if you have) in `/lessons` under it's own folder. Next, update `lessons.json` and add your lesson there. That's it, your done !
 
 **What if I don't know all of the stuff you're talking about ?**
 
-If you wrote a good lesson or improved an existing one but you don't know how to add it, don't worry just send it over to csu-il@outlook.com and we'll add it. Just don't send us PDF documents because it will make it hard for us to copy/paste.
+If you wrote a good lesson or improved an existing one but you don't know how to add it, don't worry just send it over to `csu-il@outlook.com` and we'll add it. Just don't send us PDF documents because it will make it hard for us to copy/paste.
