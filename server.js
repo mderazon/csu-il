@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/:controller', function (req, res, next) {
+app.get('/:controller/', function (req, res, next) {
   var controller = req.params.controller;
   if (controller == 'about' || controller == 'contact') {
     res.locals.controller = controller;
@@ -18,13 +18,13 @@ app.get('/:controller', function (req, res, next) {
   }
 });
 
-app.get('/lessons', function(req, res) {
+app.get('/lessons/', function(req, res) {
   res.locals.controller = 'lessons';
   res.locals.lessons = lessons;
   res.render('lessons');
 });
 
-app.get('/lessons/:name', function(req, res, next) {
+app.get('/lessons/:name/', function(req, res, next) {
     res.locals.controller = 'lessons';
     var name = req.params.name;
     var lesson = lessons[name];

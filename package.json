@@ -7,7 +7,7 @@
     "express": "3.x",
     "ejs": "0.8.3",
 	  "marked": "0.2.8",
-    "connect-slashes": "0.0.10"
+    "express-slash": "0.1.0"
   },
   "repository": {
     "type": "git",

@@ -1,16 +1,19 @@
 var express = require('express');
-var slashes = require('connect-slashes');
+var slash   = require('express-slash')
 
 
 exports.init = function (port) {
   var app = express();
-  app.use(express.static(__dirname + '/public'));
+  
+  app.use('/static', express.static(__dirname + '/public'));
   app.use('/lessons', express.static(__dirname + '/lessons', { redirect : false }));
-  // add middleware to remove trailing slash in urls
-  app.use(slashes(false));
   app.use(express.logger({
     format: ':method :url'
   }));
+  app.enable('strict routing');
+  // middleware to add trailing slash in urls
+  app.use(slash());
+  
   app.set('views', __dirname + '/views')
   app.set('view engine', 'ejs');
   app.use(express.bodyParser());
@@ -37,6 +40,8 @@ exports.init = function (port) {
       status: 500
     });
   });
+
+
 
   app.listen(port);
 
