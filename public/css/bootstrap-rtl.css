@@ -1,4 +1,4 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+ article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
     display: block;
 }
 audio, canvas, video {
@@ -39,6 +39,8 @@ img {
     border: 0;
     -ms-interpolation-mode: bicubic;
     vertical-align: middle;
+    max-width:100%; 
+    max-height:100%;
 }
 button, input, select, textarea {
     margin: 0;
@@ -70,6 +72,7 @@ textarea {
     overflow: auto;
     vertical-align: top;
 }
+
 .clearfix {
     *zoom: 1;
 }
