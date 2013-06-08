@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="row-fluid">
+  <div class="span10">
+    <h1>ברוכים הבאים!</h1>
+    <br />
+    <h2>
+      כאן יוצגו כל השיעורים <br />
+    </h2>
+  </div>
+</div>  
+<br />
+<% for lesson in @getCollection('lessons').toJSON(): %>
+  <div class="well">
+    <div class="row-fluid">
+      <div class="span8" style="height:100px">
+        <a href="<%= lesson.url %>"><h1><%= lesson.title %></h1></a>
+        <h3><%=lesson.description %></h3>
+      </div>
+      <!-- <div class="span4 offset2">
+        <img src="" height="140" width="140">
+      </div> -->
+    </div>
+  </div>
+<% end %>

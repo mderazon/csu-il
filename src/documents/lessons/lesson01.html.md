@@ -1,6 +1,8 @@
 ```
-title: This is the first lesson
-description: This is a description of the lesson
+title: נקודות למחשבה
+description: מספרים בינאריים
+author: שמעון שוקן
+date: 01/10/2009
 layout: lesson
 tags: ['intro','page']
 lessonsOrder: 1
