@@ -57,9 +57,9 @@
 			<%- @content %>
 		</section>
 		<footer>
-			<p class="pull-left">&copy; Company <%- (new Date()).getFullYear() %></p>
-			<p class="pull-right">
-				This website was last updated at <%= @site.date.toISOString() %>
+			<p class="pull-right">&copy; csunplugged <%- (new Date()).getFullYear() %></p>
+			<p class="pull-left">
+				עודכן לאחרונה ב <%= @site.date.toISOString() %>
 			</p>
 		</footer>
 	</div><!-- /container -->
