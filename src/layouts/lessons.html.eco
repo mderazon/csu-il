@@ -1,0 +1,35 @@
+﻿---
+layout: default
+url: /lessons
+---
+
+<div class="row-fluid">
+  <div class="span10">
+    <h1>ברוכים הבאים!</h1>
+    <br />
+    <h2>
+      כאן יוצגו כל השיעורים <br />
+    </h2>
+  </div>
+</div>  
+<br />
+
+<% for (var l in lessons) {%>
+<% var lesson = lessons[l] %>
+<% var lesson_path = '/lessons/' + l + '/'%>
+
+<div class="well">
+  <div class="row-fluid">
+    <div class="span8" style="height:100px">
+      <a href="<%= lesson_path %>"><h1><%= lesson.title %></h1></a>
+      <h3><%=lesson.description %></h3>
+    </div>
+    <div class="span4 offset2">
+      <img src="<%= lesson_path %>/<%=lesson.thumbnail_file %>" height="140" width="140">
+    </div>
+  </div>
+  
+</div>
+<% } %>
+
+<% include foot %>
