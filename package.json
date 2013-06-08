@@ -1,28 +1,29 @@
 {
-	"name": "twitter-bootstrap.docpad",
+	"name": "csu-il",
+	"email": "mderazon@hotmail.com",
 	"version": "0.10.0",
-	"description": "Twitter Bootstrap skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.",
-	"homepage": "https://github.com/bevry/twitter-bootstrap.docpad",
+	"description": "Computer science unplugged Israel.",
+	"homepage": "http://csunplugged.org.il",
 	"keywords": [
-		"docpad-skeleton",
+		"csunplugged",
 		"docpad",
 		"website",
 		"bootstrap",
 		"twitter bootstrap"
 	],
-	"author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+	"author": "Michael Derazon",
 	"maintainers": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+
 	],
 	"contributors": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+
 	],
 	"bugs": {
-		"url": "https://github.com/docpad/twitter-bootstrap.docpad/issues"
+		"url": "https://github.com/mderazon/csu-il/issues"
 	},
 	"repository" : {
 		"type" : "git",
-		"url" : "https://github.com/docpad/twitter-bootstrap.docpad.git"
+		"url" : "git://github.com/mderazon/csu-il.git"
 	},
 	"engines" : {
 		"node": "0.10",

@@ -97,18 +97,7 @@ docpadConfig = {
 	# =================================
 	# Plugins
 
-	plugins:
-		downloader:
-			downloads: [
-				{
-					name: 'Twitter Bootstrap'
-					path: 'src/files/vendor/twitter-bootstrap'
-					url: 'https://nodeload.github.com/twitter/bootstrap/tar.gz/master'
-					tarExtractClean: true
-				}
-			]
-
-
+	
 	# =================================
 	# DocPad Events
 

@@ -3,18 +3,20 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  developer: Michael Derazon
+  Twitter: @mderazon
+  Location: Tel Aviv, Israel
 
 /* THANKS */
   Names (& URL):
 
 /* SITE */
+  Name: Computer Science Unplugged Israel
   Standards: HTML5, CSS3
+  Languages: Hebrew
+  IDE: Sublime Text
   Components: Modernizr, jQuery
-  Software:
+  Software: Node.js, Docpad
 
 
 
