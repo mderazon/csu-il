@@ -1,1 +1,1 @@
-Your website's license should go here
+LICENSE
