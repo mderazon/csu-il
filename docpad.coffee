@@ -17,7 +17,6 @@ docpadConfig = {
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
 				'www.csunplugged.org.il',
-				'csu-il.herokuapp.com'
 			]
 
 			# The default title of our website
