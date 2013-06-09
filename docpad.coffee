@@ -12,7 +12,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://csunplugged.org.il"
+			url: "http://csu-il.herokuapp.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
