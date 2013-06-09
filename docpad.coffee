@@ -12,11 +12,11 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://csu-il.herokuapp.com"
+			url: "http://www.csunplugged.org.il"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.csunplugged.org.il',
+				'csu-il.herokuapp.com',
 			]
 
 			# The default title of our website
@@ -29,7 +29,7 @@ docpadConfig = {
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				computer science unplugged, computer science, program, מדעי המחשב ללא מחשב, מדעי המחשב, שיעורים, תוכנית לימודים
 				"""
 
 			# The website author's name
