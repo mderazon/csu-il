@@ -7,8 +7,6 @@ node_js:
   - 0.8
 
 after_script:
-  # Install the Heroku package (or the Heroku toolbelt)
-  - npm install heroku
   # Add your Heroku git repo:
   - git remote add heroku git@heroku.com:csu-il.git
   # Add your Heroku API key:
@@ -18,6 +16,7 @@ after_script:
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
   - echo "   CheckHostIP no" >> ~/.ssh/config
   - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+  - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   # Clear your current Heroku SSH keys:
   - heroku keys:clear
   # Add a new SSH key to Heroku
