@@ -20,7 +20,8 @@ pageOrder: 1
     <div class="row-fluid">
       <div class="span8" style="height:100px">
         <a href="<%= lesson.url %>"><h1><%= lesson.title %></h1></a>
-        <h3><%=lesson.description %></h3>
+        <h3><%= lesson.description %></h3>
+        <h4><%= lesson.date.getDate() + '/' + (lesson.date.getMonth() + 1) + '/' + lesson.date.getFullYear() %></h4>
       </div>
       <div class="span3 offset1">
         <img src="<%= lesson.url %>/thumbnail.png" height="140" width="140">

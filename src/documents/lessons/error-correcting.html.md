@@ -2,7 +2,7 @@
 title: קסמי קלפים
 description: שיטות לאיתור ותיקון טעויות
 author: שמעון שוקן
-date: 01/09/2009
+date: 2009-09-01
 layout: lesson
 tags: ['intro','page']
 ```

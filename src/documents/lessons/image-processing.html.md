@@ -2,7 +2,7 @@
 title: משחקי פיקסלים
 description: ייצוג ועיבוד תמונות
 author: שמעון שוקן
-date: 01/08/2009
+date: 2009-08-01
 layout: lesson
 tags: ['intro','page']
 ```
