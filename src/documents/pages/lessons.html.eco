@@ -22,10 +22,12 @@ pageOrder: 1
         <a href="<%= lesson.url %>"><h1><%= lesson.title %></h1></a>
         <h3><%=lesson.description %></h3>
       </div>
-      
-      <!-- <div class="span4 offset2">
-        <img src="" height="140" width="140">
-      </div> -->
+      <div class="span3 offset1">
+        <img src="<%= lesson.url %>/thumbnail.png" height="140" width="140">
+      </div>
     </div>
   </div>
 <% end %>
+
+
+  

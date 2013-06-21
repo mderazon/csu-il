@@ -86,11 +86,8 @@ docpadConfig = {
 		pages: (database) ->
 			database.findAllLive({pageOrder: $exists: true}, [pageOrder:1,title:1])
 
-		posts: (database) ->
-			database.findAllLive({tags:$has:'post'}, [date:-1])
-
 		lessons: (database) ->
-			database.findAllLive({lessonsOrder: $exists: true}, [lessonsOrder:1,title:1])
+			database.findAllLive({layout: 'lesson'}, [date:-1])
 
 
 	# =================================

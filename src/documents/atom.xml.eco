@@ -10,7 +10,7 @@
 		<email><%= @site.email %></email>
 	</author>
 
-	<% for document in @getCollection('posts').toJSON(): %>
+	<% for document in @getCollection('lessons').toJSON(): %>
 		<entry>
 			<title><%= document.title %></title>
 			<link href="<%= @site.url+'/'+document.url %>"/>
