@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/csu-il/csnc.png?branch=master)](https://travis-ci.org/csu-il/csnc.png?branch=master)
+[![Build Status](https://drone.io/github.com/mderazon/csu-il/status.png)](https://drone.io/github.com/mderazon/csu-il/latest)
 
 ## Computer Science Unplugged IL ##
 
