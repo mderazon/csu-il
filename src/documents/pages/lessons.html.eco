@@ -18,9 +18,18 @@ pageOrder: 1
       <div class="span9">
         <a href="<%= lesson.url %>"><h1><%= lesson.title %></h1></a>
         <h3><%= lesson.description %></h3>
-        <h4><%= lesson.date.getDate() + '/' + (lesson.date.getMonth() + 1) + '/' + lesson.date.getFullYear() %></h4>
+        <br>
+        <div>
+          <span class="badge badge-success">נכתב ב <%= lesson.date.getDate() + '/' + (lesson.date.getMonth() + 1) + '/' + lesson.date.getFullYear() %></span>
+          <br><br>
+          <div>
+            <% for tag in lesson.tags: %>
+              <span class="label label-info"><%=tag %></span>
+            <% end %>
+          </div>
+        </div> 
       </div>
-      <div class="span3">
+      <div class="span3" style="vertical-align: middle">
         <img src="<%= lesson.url %>/thumbnail.png" height="140" width="140">
       </div>
     </div>
