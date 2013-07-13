@@ -48,7 +48,9 @@ docpadConfig = {
 			scripts: [
 				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js",
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js",
+				"//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js",
 				"/scripts/script.js"
+
 			]
 
 
