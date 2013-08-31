@@ -13,9 +13,9 @@ All of the lessons are in Hebrew, most of them were translated by [Benny Chor](h
 ## Contribution ##
 
 
-Wanna contribute to the project ? Yeah !!
+Wanna contribute to the project ? Yay !!
 
-On the technical side, the website is powered by [Docpad](http://docpad.org/) and [Twitter bootstrap](http://twitter.github.com/bootstrap/). Feel free to fork the repository and hack it. when your'e done, send us a pull request and we'll add the change.
+The website is powered by Node.js, [Docpad](http://docpad.org/) and [Twitter bootstrap](http://twitter.github.com/bootstrap/). Feel free to fork the repository and hack on it. When your'e done, send us a pull request and we'll add the change.
 
 **What we need ?**
 
