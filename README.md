@@ -2,9 +2,9 @@
 
 ## Computer Science Unplugged IL ##
 
-Website: [http://csunplugged.org.il](http://csunplugged.org.il)
+Website: [http://www.csunplugged.org.il](http://www.csunplugged.org.il)
 
-Based on [Computer Science Unplugged](http://csunplugged.org/) program. Designed to help teach basic principals of computer science to kids (but also grown ups).
+Based on [Computer Science Unplugged](http://www.csunplugged.org/) program. Designed to help teach basic principals of computer science to kids (but also grown ups).
 
 All of the lessons are in Hebrew, most of them were translated by [Benny Chor](http://www.tau.ac.il/~bchor/) and [Shimon Schocken](http://shimonschocken.com/).
 
@@ -58,4 +58,4 @@ Markdown is basically just plain text, therefor you can write it in any text edi
 
 **What if I don't know all of the stuff you're talking about ?**
 
-If you wrote a good lesson or improved an existing one but you don't know how to add it, don't worry just send it over to `csu-il@outlook.com` and we'll add it. Just don't send us PDF documents because it will make it hard for us to copy/paste.
+If you wrote a good lesson or improved an existing one but you don't know how to add it, don't worry just send it over to [contact@csunplugged.org.il](mailto:contact@csunplugged.org.il) and we'll add it. Just don't send us PDF documents because it will make it hard for us to copy/paste.
