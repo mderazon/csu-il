@@ -94,7 +94,33 @@ docpadConfig = {
 
 	# =================================
 	# Plugins
-
+	plugins:
+	    formmail:
+	        # path: '/contact'
+	        # transport: {
+	        #     host: 'smtp.live.com',
+	        #     secureConnection: false,
+	        #     port: 587,
+	        #     auth: {
+	        #         user: 'contact@csunplugged.org.il',
+	        #         pass: 'HellYeahComputer'
+	        #     },
+	        #     tls:{
+	        #         ciphers:'SSLv3'
+	        #     }
+	        # }
+	        # redirect: '/'
+	        # to: 'mderazon@gmail.com'
+	        path: '/contact'
+	        transport: {
+	            service: 'hotmail',
+	            auth: {
+	                user: 'contact@csunplugged.org.il',
+	                pass: 'HellYeahComputer'
+	            }
+	        }
+	        redirect: '/'
+	        to: 'contact@csunplugged.org.il'
 	
 	# =================================
 	# DocPad Events

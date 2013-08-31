@@ -24,7 +24,7 @@ pageOrder: 1
           <br><br>
           <div>
             <% for tag in lesson.tags: %>
-              <span class="label label-info"><%=tag %></span>
+              <span class="label label-info"><%= tag %></span>
             <% end %>
           </div>
         </div> 

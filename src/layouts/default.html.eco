@@ -60,10 +60,11 @@
 		<section id="content" class="content">
 			<%- @content %>
 		</section>
+		<hr>
 		<footer>
-			<p class="pull-right">&copy; csunplugged <%- (new Date()).getFullYear() %></p>
+			<p class="pull-right">&copy; csunplugged.org.il <%- (new Date()).getFullYear() %></p>
 			<p class="pull-left">
-				עודכן לאחרונה ב <%= @site.date.toISOString() %>
+				עודכן לאחרונה ב <%= @site.date.getDate() + '/' + (@site.date.getMonth() + 1) + '/' + @site.date.getFullYear() + ' בשעה ' + @site.date.getHours() + ':' + @site.date.getMinutes()%>
 			</p>
 		</footer>
 	</div><!-- /container -->
