@@ -13,7 +13,7 @@ All of the lessons are in Hebrew, most of them were translated by [Benny Chor](h
 ## Contribution ##
 
 
-If you want to contribute you came to the right place !
+Wanna contribute to the project ? Yeah !!
 
 On the technical side, the website is powered by [Docpad](http://docpad.org/) and [Twitter bootstrap](http://twitter.github.com/bootstrap/). Feel free to fork the repository and hack it. when your'e done, send us a pull request and we'll add the change.
 
@@ -21,7 +21,7 @@ On the technical side, the website is powered by [Docpad](http://docpad.org/) an
 
 - Help with **design**, i'm bad at css and aesthetics.
 - Going through the lessons and constantly improve them.
-- Anything else.
+- Anything else, checkout the Github [issues page](https://github.com/mderazon/csu-il/issues)
 
 ## Requirements ##
 - [Node.js](http://nodejs.org/)
@@ -33,6 +33,7 @@ Install Docpad with `npm` :
     $ npm install -g docpad
 Go to the project root folder and enter:
 
+    $ npm install
     $ docpad run
 Docpad will start generating all the files. When it's done you can open your browser at `http://localhost:9778`.
 
