@@ -101,7 +101,7 @@ docpadConfig = {
 	            service: 'hotmail',
 	            auth: {
 	                user: 'contact@csunplugged.org.il',
-	                pass: 'HellYeahComputer'
+	                pass: process.env.EMAIL_PASS
 	            }
 	        }
 	        redirect: '/'
