@@ -52,6 +52,12 @@
 							<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
 						</li>
 					<% end %>
+					<li>
+						<form class="form-search">
+						  <input type="text" id="st-search-input" class="st-search-input navbar-search">
+						</form>
+
+					</li>
 				</ul>
 			</div>
 		</div>
