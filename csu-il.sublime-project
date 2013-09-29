@@ -1,0 +1,17 @@
+{
+  "folders":
+  [
+  {
+    "path": "."
+  }
+  ],
+  "settings":
+  {
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "line_ending": "Unix",
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+    "highlight_modified_tabs": true
+  }
+}
