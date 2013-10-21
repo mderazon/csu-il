@@ -34,7 +34,7 @@ Install Docpad with `npm` :
 Go to the project root folder and enter:
 
     $ npm install
-    $ docpad run
+    $ node app.js
 Docpad will start generating all the files. When it's done you can open your browser at `http://localhost:9778`.
 
 ## Adding lessons ##
