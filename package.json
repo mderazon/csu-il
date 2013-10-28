@@ -37,7 +37,7 @@
     "docpad-plugin-related": "2.x",
     "docpad-plugin-stylus": "2.x",
     "docpad-plugin-text": "2.x",
-    "docpad-plugin-formmail": "2.x",
+    "docpad-plugin-formmail": "mderazon/docpad-plugin-formmail",
     "express": "3.x"
   },
   "devDependencies": {
