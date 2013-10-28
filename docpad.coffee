@@ -52,6 +52,9 @@ docpadConfig = {
 				"/scripts/script.js"
 
 			]
+			# Third party services details
+			services:
+				googleAnalytics: 'UA-45238302-1'
 
 
 
@@ -106,7 +109,7 @@ docpadConfig = {
 	        }
 	        redirect: '/'
 	        to: 'contact@csunplugged.org.il'
-	
+
 	# =================================
 	# DocPad Events
 
