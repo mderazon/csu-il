@@ -1,7 +1,7 @@
 {
   "name": "csu-il",
   "email": "mderazon@hotmail.com",
-  "version": "0.10.0",
+  "version": "0.1.0",
   "description": "Computer science unplugged Israel.",
   "homepage": "http://csunplugged.org.il",
   "keywords": [
@@ -22,8 +22,8 @@
     "url": "git://github.com/mderazon/csu-il.git"
   },
   "engines": {
-    "node": "0.10",
-    "npm": "1.2"
+    "node": "0.10.x",
+    "npm": "1.2.x"
   },
   "dependencies": {
     "docpad": "6.x",
