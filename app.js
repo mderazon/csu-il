@@ -3,7 +3,7 @@ var express = require('express');
 var http = require('http');
 var app = express();
 var docpad = require('docpad');
-var server = http.createServer(app).listen(8080);
+var server = http.createServer(app).listen(process.env.PORT || 8080);
 
 // Add our Application Stuff
 app.use(express.bodyParser());
