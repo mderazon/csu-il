@@ -1,0 +1,40 @@
+{
+  "name": "bootstrap-rtl",
+  "version": "0.9.13",
+  "homepage": "https://github.com/morteza/bootstrap-rtl",
+  "authors": [
+    "Morteza Ansarinia <ansarinia@me.com>"
+  ],
+  "main": [
+    "./dist/css/bootstrap.css",
+    "./dist/css/bootstrap-rtl.css",
+    "./dist/js/bootstrap.js",
+    "./dist/fonts/glyphicons-halflings-regular.eot",
+    "./dist/fonts/glyphicons-halflings-regular.svg",
+    "./dist/fonts/glyphicons-halflings-regular.ttf",
+    "./dist/fonts/glyphicons-halflings-regular.woff"
+  ],
+  "ignore": [
+    "**/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests"
+  ],
+  "license": "Apache 2.0",
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "_release": "0.9.13",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.9.13",
+    "commit": "69751a33074f24ad9370184dd158cbe2276f4296"
+  },
+  "_source": "git://github.com/morteza/bootstrap-rtl.git",
+  "_target": "~0.9.13",
+  "_originalSource": "bootstrap-rtl",
+  "_direct": true
+}
