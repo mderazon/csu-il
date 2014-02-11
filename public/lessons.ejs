@@ -6,13 +6,12 @@
 </div>
 <br>
 <% for(var key in public.lessons._data) {%>
-  <% if (key !== 'index') { %>
-  <% var lesson = public.lessons._data[key]%>
+  <% var lesson =  public.lessons._data[key]%>
 
   <div class="well container">
     <div class="row">
       <div class="span9">
-        <a href="<%= key %>.html"><h1><%= lesson.title %></h1></a>
+        <a href="<%= lesson.url %>"><h1><%= lesson.title %></h1></a>
         <h3><%= lesson.description %></h3>
         <br>
         <div>
@@ -26,11 +25,11 @@
         </div>
       </div>
       <div class="span3" style="vertical-align: middle">
-        <img src="<%= key %>/thumbnail.png" height="140" width="140">
+        <img src="<%= lesson.url %>/thumbnail.png" height="140" width="140">
       </div>
     </div>
   </div>
-  <% } %>
+
 <% } %>
 
 
