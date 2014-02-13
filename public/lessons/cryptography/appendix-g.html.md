@@ -1,8 +1,3 @@
-```
-parent_lesson: cryptography
-order: 7
-layout: appendix
-```
 
 #דף פעילות 8#
 ##פענחו את שמונה השורות שלמטה על פי המפתח המוצע כאן##

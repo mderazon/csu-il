@@ -1,8 +1,3 @@
-```
-parent_lesson: binary-numbers
-order: 1
-layout: appendix
-```
 
 #דף הכנה A#
 ארבעה סטים זהים של חמשת הקלפים.

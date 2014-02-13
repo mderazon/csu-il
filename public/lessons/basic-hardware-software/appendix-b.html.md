@@ -1,8 +1,3 @@
-```
-parent_lesson: basic-hardware-software
-order: 2
-layout: appendix
-```
 
 #נספח ב': כתיבת והרצת תכניות מחשב#
 

@@ -1,8 +1,3 @@
-```
-parent_lesson: graph-theory
-order: 7
-layout: appendix
-```
 
 #דף פעילות 7: ייצוג מפה וצביעתה באמצעות גרף#
 

@@ -1,8 +1,3 @@
-```
-parent_lesson: graph-theory
-order: 11
-layout: appendix
-```
 
 #דף פעילות 9: צביעת גרפים (למתקדמים)#
 

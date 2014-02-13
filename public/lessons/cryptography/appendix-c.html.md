@@ -1,8 +1,3 @@
-```
-parent_lesson: cryptography
-order: 3
-layout: appendix
-```
 
 #דף פעילות 4#
 ##טבלת שכיחות  האותיות בשפה העברית: ##

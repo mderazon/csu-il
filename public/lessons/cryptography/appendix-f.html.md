@@ -1,8 +1,3 @@
-```
-parent_lesson: cryptography
-order: 6
-layout: appendix
-```
 
 #דף פעילות 7#
 ##ספירת שכיחות האותיות בקטע טקסט מוצפן (בפסקה 1 בלבד)##

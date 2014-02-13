@@ -1,8 +1,3 @@
-```
-parent_lesson: sorting-networks
-order: 3
-layout: appendix
-```
 
 #רשת למציאת מקסימום#
 

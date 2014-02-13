@@ -1,8 +1,3 @@
-```
-parent_lesson: cryptography
-order: 1
-layout: appendix
-```
 
 #דף פעילות 1#
 מפתח סודי לקוד החלפת אותיות:

@@ -1,8 +1,3 @@
-```
-parent_lesson: image-processing
-order: 1
-layout: appendix
-```
 
 #דף הדגמה A#
 

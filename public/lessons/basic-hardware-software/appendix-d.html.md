@@ -1,8 +1,3 @@
-```
-parent_lesson: basic-hardware-software
-order: 4
-layout: appendix
-```
 
 #דף פעילות 2: מה התכנית עושה?#
 

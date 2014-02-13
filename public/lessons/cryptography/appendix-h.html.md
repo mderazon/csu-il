@@ -1,8 +1,3 @@
-```
-parent_lesson: cryptography
-order: 8
-layout: appendix
-```
 
 #דף פעילות 9#
 

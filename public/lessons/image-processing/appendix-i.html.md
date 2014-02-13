@@ -1,8 +1,3 @@
-```
-parent_lesson: image-processing
-order: 9
-layout: appendix
-```
 
 #דף פעילות 5
 

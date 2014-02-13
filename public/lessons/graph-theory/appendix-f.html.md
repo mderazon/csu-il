@@ -1,8 +1,3 @@
-```
-parent_lesson: graph-theory
-order: 6
-layout: appendix
-```
 
 #דף פעילות 6: צביעת מפה בעזרת גרף#
 

@@ -1,8 +1,3 @@
-```
-parent_lesson: binary-numbers
-order: 4
-layout: appendix
-```
 
 #דף פעילות 3ב
 ##טבלת קידוד:##

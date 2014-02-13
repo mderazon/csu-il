@@ -1,8 +1,3 @@
-```
-parent_lesson: graph-theory
-order: 10
-layout: appendix
-```
 
 #פתרונות אפשריים לבעיות צביעת הגרפים שהוצגו בפרק#
 

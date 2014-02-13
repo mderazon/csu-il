@@ -1,8 +1,3 @@
-```
-parent_lesson: search-algorithms
-order: 1
-layout: appendix
-```
 
 #דף פעילות 1#
 

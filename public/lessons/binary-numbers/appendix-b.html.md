@@ -1,8 +1,3 @@
-```
-parent_lesson: binary-numbers
-order: 2
-layout: appendix
-```
 
 #דף פעילות 1#
 

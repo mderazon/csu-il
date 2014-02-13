@@ -1,8 +1,3 @@
-```
-parent_lesson: sorting-networks
-order: 2
-layout: appendix
-```
 
 #דף פעילות 2#
 (במקרה שמחליטים להחליף את הפעילות מחוץ לכתה בפעילות בתוך הכתה)

@@ -1,8 +1,3 @@
-```
-parent_lesson: graph-theory
-order: 8
-layout: appendix
-```
 
 #דף פעילות 8: הקצאת תדרים#
 

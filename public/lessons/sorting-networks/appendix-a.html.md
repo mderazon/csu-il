@@ -1,8 +1,3 @@
-```
-parent_lesson: sorting-networks
-order: 1
-layout: appendix
-```
 
 #דף פעילות 1#
 שני עותקים זהים של רשת מיון לקלט בגודל 4.
