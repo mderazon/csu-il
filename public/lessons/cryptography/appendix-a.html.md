@@ -10,7 +10,7 @@ layout: appendix
 <br>
 
 <div id="container" align="center">
-  <img src="img07.png" title=""/>
+  <img class="img-responsive" src="img07.png" title=""/>
 </div>
 <br>
 <br>
@@ -27,7 +27,7 @@ layout: appendix
 #דף פעילות 2#
 מפתח סודי לקוד החלפת אותיות:
 <div id="container" align="center">
-  <img src="img07.png" title=""/>
+  <img class="img-responsive" src="img07.png" title=""/>
 </div>
 <br>
 <br>

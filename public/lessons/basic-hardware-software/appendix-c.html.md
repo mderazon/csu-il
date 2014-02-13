@@ -12,7 +12,7 @@ layout: appendix
 <br>
 
 <div id="container" align="center">
-  <img src="img24.png" title=""/>
+  <img class="img-responsive" src="img24.png" title=""/>
 </div>
 <br>
 <br>
@@ -20,7 +20,7 @@ layout: appendix
 **התבוננו בתכנית הבאה :**
 
 <div id="container" align="center">
-  <img src="img25.png" title=""/>
+  <img class="img-responsive" src="img25.png" title=""/>
 </div>
 <br>
 

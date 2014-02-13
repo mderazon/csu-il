@@ -7,6 +7,6 @@ layout: appendix
 #דף הדגמה A#
 
 <div id="container" align="center">
-  <img src="img04.png" title=""/>
+  <img class="img-responsive" src="img04.png" title=""/>
 </div>
 

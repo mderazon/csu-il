@@ -14,7 +14,7 @@ layout: appendix
 היריב צריך לגלות את המשבצת הזאת בסדרת ניחושים.
 
 <div id="container" align="center">
-  <img src="img07.png" title=""/>
+  <img class="img-responsive" src="img07.png" title=""/>
 </div>
 
 
@@ -26,10 +26,10 @@ layout: appendix
 בכל ניחוש מכריזים על טור (אות) או שורה (מספר), והיריב עונה "מימין", "משמאל", "מלמטה", או "מלמעלה".
 
 אחרי כל ניחוש מסמנים ב X את **כל המשבצות**
-בהן לא נמצאת הצוללת. 
+בהן לא נמצאת הצוללת.
 
 <div id="container" align="center">
-  <img src="img07.png" title=""/>
+  <img class="img-responsive" src="img07.png" title=""/>
 </div>
 <br>
 <br>

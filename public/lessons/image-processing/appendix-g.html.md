@@ -11,18 +11,18 @@ layout: appendix
 <br/>
 
 <div id="container" align="center">
-  <img src="img19.png" title=""/>
-</div>
-
-<br/>
-  
-<div id="container" align="center">
-  <img src="img20.png" title=""/>
+  <img class="img-responsive" src="img19.png" title=""/>
 </div>
 
 <br/>
 
 <div id="container" align="center">
-  <img src="img21.png" title=""/>
+  <img class="img-responsive" src="img20.png" title=""/>
+</div>
+
+<br/>
+
+<div id="container" align="center">
+  <img class="img-responsive" src="img21.png" title=""/>
 </div>
 

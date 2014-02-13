@@ -17,7 +17,7 @@
 רובי חי במרחב סגור ואין לנו קשר ישיר איתו. המרחב מורכב בעיקר מתאים. בחלק הימני יש סדרה של מאה תאים ממוספרים שנקראים "תאי זיכרון". חלק מתאי הזיכרון מכילים מספרים, וחלקם ריקים. תא 98 מכיל תמיד את המספר אפס, ותא 99 מכיל תמיד את המספר 1. בצד שמאל יש שתי סדרות תאים שנקראות "קלט" ו- "פלט". כמו כן יש שלושה סמנים -- חיצים קטנים -- שמצביעים על תא זיכרון מסוים, תא קלט מסויים, ותא פלט מסויים. במרכז נמצא תא בודד שנקרא "אוגר". כל התאים בעולמו של רובי הם מאותו סוג בדיוק: בכל תא יש לוח קטן ומחיק שאפשר לכתוב עליו מספר בן שלוש ספרות, מ 999- עד 999.
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img01.png" title="מיצג 1: העולם של רובי" />
+<img class="img-responsive" src="basic-hardware-software/img01.png" title="מיצג 1: העולם של רובי" />
 <br>
 <h4>מיצג 1: העולם של רובי</h4>
 <h5>(כל המספרים שמופיעים במיצג הם דוגמא בלבד)</h5>
@@ -38,14 +38,14 @@
 ##פקודות קלט/פלט <a href="#" data-toggle="tooltip" title="בשלב זה מומלץ לקרוא את נספח א', שמסביר איך לערוך הדגמות בכתה."><sup>2</sup></a>
 פקודות אלה מצוות על רובי להעביר מספרים מהקלט אל האוגר, ומהאוגר אל הפלט:
 <div id="container" align="center">
-<img src="basic-hardware-software/img02.png" />
+<img class="img-responsive" src="basic-hardware-software/img02.png" />
 <br>
 </div>
 
 לדוגמא:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img03.png" />
+<img class="img-responsive" src="basic-hardware-software/img03.png" />
 <br>
 </div>
 
@@ -60,7 +60,7 @@
 הנה דוגמא של פעולת הכתיבה לפלט, שבורא עולמו של רובי החליט לכנותה 900 , או write:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img04.png" />
+<img class="img-responsive" src="basic-hardware-software/img04.png" />
 <br>
 </div>
 
@@ -75,14 +75,14 @@
 פקודות אלה מצוות על רובי לקרוא מספר מתא זיכרון מסוים ולכתוב אותו באוגר, ולהיפך, לקרוא מספר מהאוגר, ולכתוב אותו בתא זיכרון מסויים. כתובתו של התא המסוים – מספר בין 00 ל- 99 --  היא חלק ממבנה הפקודה:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img05.png" />
+<img class="img-responsive" src="basic-hardware-software/img05.png" />
 <br>
 </div>
 
 לדוגמא:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img06.png" />
+<img class="img-responsive" src="basic-hardware-software/img06.png" />
 <br>
 </div>
 
@@ -90,7 +90,7 @@
 דומה:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img07.png" />
+<img class="img-responsive" src="basic-hardware-software/img07.png" />
 <br>
 </div>
 
@@ -102,14 +102,14 @@
 פקודות אלה עוסקות בשתי הפעולות החשבוניות היחידות שרובי יודע לבצע:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img08.png" />
+<img class="img-responsive" src="basic-hardware-software/img08.png" />
 <br>
 </div>
 
 דוגמאות:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img09.png" />
+<img class="img-responsive" src="basic-hardware-software/img09.png" />
 <br>
 </div>
 
@@ -119,7 +119,7 @@
 לאחר שהתוודענו לרוב פקודות השפה, אפשר להדגים איך מבצעים פקודות ברצף, אחת אחרי השנייה.  הצג לילדים תמונת מחשב עם דוגמת קלט ורצף פקודות לדוגמא (מיצג 2). הסבר מראש שמדובר ברצף פקודות שרירותי שמטרתו להדגים איך רובי עובד, בלי לגרום לו לעשות שום דבר משמעותי במיוחד.
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img10.png" title="מיצג 2: הדגמת ביצוע רצף פקודות" />
+<img class="img-responsive" src="basic-hardware-software/img10.png" title="מיצג 2: הדגמת ביצוע רצף פקודות" />
 <br>
 <h4>מיצג 2: הדגמת ביצוע רצף פקודות</h4>
 <br>
@@ -143,7 +143,7 @@
 **תכנית ראשונה (חיבור)**: קרא שני מספרים מהקלט, חבר אותם, וכתוב את התוצאה לפלט. המיצג הבא מציג את התכנית, וחשוב יותר, את התהליך המחשבתי שקדם לכתיבתה.
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img11.png" title="מיצג 3: תכנית לחיבור שני מספרים" />
+<img class="img-responsive" src="basic-hardware-software/img11.png" title="מיצג 3: תכנית לחיבור שני מספרים" />
 <br>
 <h4>מיצג 3: תכנית לחיבור שני מספרים</h4>
 <br>
@@ -204,14 +204,14 @@
 בכל שפת מחשב יש פקודות שמאפשרות קפיצות קדימה ואחורה ברצף הפקודות. לפקודות האלה נהוג לקרוא "פקודות בקרה" (control command). בשפה של רובי יש שלוש פקודות קפיצה ופקודה עצירה אחת:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img12.png" />
+<img class="img-responsive" src="basic-hardware-software/img12.png" />
 <br>
 </div>
 
 פקודת ifzgoto xx היא תקציר של if the register is zero, goto command xx ("register" באנגלית זה "אוגר"). באופן דומה, פקודת ifpgoto xx היא תקציר של if the register is positive, goto command xx. דוגמאות:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img13.png" />
+<img class="img-responsive" src="basic-hardware-software/img13.png" />
 <br>
 </div>
 
@@ -220,14 +220,14 @@
 כעת נתבונן בפקודה ifzgoto xx , או 6xx, שמשמעותה: "אם ערך האוגר שווה אפס, קפוץ לבצע את פקודה מספר xx". בדוגמא שלפנינו xx הוא 01:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img14.png" />
+<img class="img-responsive" src="basic-hardware-software/img14.png" />
 <br>
 </div>
 
 מכיוון שערך האוגר הוא 0, המחשב קופץ לבצע את פקודה 01. מה קורה אם ערך האוגר שונה מאפס? בואו נראה:
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img15.png" />
+<img class="img-responsive" src="basic-hardware-software/img15.png" />
 <br>
 </div>
 
@@ -236,7 +236,7 @@
 לסיום, נתבונן בשתי דוגמאות של פקודת ifpgoto xx שמשמעותה "אם ערך האוגר גדול מאפס, קפוץ לבצע את פקודה מספר xx":
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img16.png" />
+<img class="img-responsive" src="basic-hardware-software/img16.png" />
 <br>
 </div>
 
@@ -250,7 +250,7 @@
 x - y. אם ההפרש גדול מאפס, סימן ש- x  גדול מ- y, ולכן מסיקים ש x הוא המקסימום; אחרת, y הוא המקסימום. זהו הרעיון הבסיסי עליו ניתן לבסס את התכנית כולה. המיצג הבא מציג את התכנית ואת התהליך המחשבתי שליווה את כתיבתה.
 
 <div id="container" align="center">
-<img src="basic-hardware-software/img17.png" title="מיצג 4: תכנית למציאת המקסימום של שני מספרים" />
+<img class="img-responsive" src="basic-hardware-software/img17.png" title="מיצג 4: תכנית למציאת המקסימום של שני מספרים" />
 <br>
 <h4>מיצג 4: תכנית למציאת המקסימום של שני מספרים</h4>
 <br>

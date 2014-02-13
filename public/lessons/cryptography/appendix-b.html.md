@@ -12,12 +12,12 @@ layout: appendix
 <br>
 
 <div id="container" align="center">
-  <img src="img07.png" title=""/>
+  <img class="img-responsive" src="img07.png" title=""/>
 </div>
 <br>
 <br>
 
-כתבי/כתוב את שמך המלא (ללא רווח בין השם הפרטי ושם המשפחה). 
+כתבי/כתוב את שמך המלא (ללא רווח בין השם הפרטי ושם המשפחה).
 
 שם מקורי :
 

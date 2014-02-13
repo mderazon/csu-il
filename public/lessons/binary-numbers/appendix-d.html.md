@@ -11,7 +11,7 @@ layout: appendix
 <br>
 
 <div id="container" align="center">
-  <img src="img10.png" title=""/>
+  <img class="img-responsive" src="img10.png" title=""/>
 </div>
 <br>
 <br>
@@ -45,7 +45,7 @@ layout: appendix
 
 
 ###שם בעברית###
-       
+
 <br>
 <br>
 <br>

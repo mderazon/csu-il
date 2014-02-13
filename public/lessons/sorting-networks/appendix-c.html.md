@@ -6,7 +6,7 @@ layout: appendix
 
 #רשת למציאת מקסימום#
 
-אפשר להדביק על קרטון ולהציג לכתה.  
+אפשר להדביק על קרטון ולהציג לכתה.
 אבל, עדיף ליצור (או לצייר על הלוח) גרסה גדולה יותר של הרשת הזאת,
 כדי שיהיה קל לכתוב בתוכה מספרים אותם יראו מרחוק.
 
@@ -15,7 +15,7 @@ layout: appendix
 <br>
 
 <div id="container" align="center">
-  <img src="img08.png" title=""/>
+  <img class="img-responsive" src="img08.png" title=""/>
 </div>
 <br>
 <br>

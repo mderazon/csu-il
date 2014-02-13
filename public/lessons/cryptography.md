@@ -34,7 +34,7 @@
 אנו נשתמש כאן במפתח ההצפנה הבא, אותו בחרנו באקראי:
 
 <div id="container" align="center">
-<img src="cryptography/img01.png" title="מפתח הצפנה אקראי" />
+<img class="img-responsive" src="cryptography/img01.png" title="מפתח הצפנה אקראי" />
 <br>
 </div>
 
@@ -76,7 +76,7 @@
   כדאי לפנות לתלמידים ולשאול לדעתם מיהן האותיות הנפוצות ביותר, ומיהן הנדירות ביותר. כדאי להעיר לתלמידים כי פילוג האותיות הוא **מאוד לא אחיד**. למשל, "י" מופיעה בערך פי 14 יותר מ"ז", ובערך פי 9 יותר מ-"ט". חוסר אחידות זה הוא אחד הכלים המרכזיים שיאפשר לנו לפרוץ את שיטת ההצפנה שתיארנו. כתבי על הלוח את הטבלה כולה, אות אות ושכיחותה, כפי שהיא מופיעה כאן.
 
 <div id="container" align="center">
-<img src="cryptography/img02.png" title="טבלת שכיחות האותיות" />
+<img class="img-responsive" src="cryptography/img02.png" title="טבלת שכיחות האותיות" />
 <br><br>
 </div>
 
@@ -94,28 +94,28 @@
 **למורה**: הטבלה הסופית של מספר מופעי האותיות בטקסט, אותה נמסור לתלמידים, היא
 
 <div id="container" align="center">
-<img src="cryptography/img03.png" />
+<img class="img-responsive" src="cryptography/img03.png" />
 <br><br>
 </div>
 
 שימו לב כי "נ" ו-"ת" מופיעות בדיוק אותו מספר פעמים (שתיהן 43). כעת בקשי משני תלמידים לגשת ללוח, לרשום תחילה את טבלת השכיחויות,  וכעת למיין אותה כאשר האות השכיחה ביותר, במקרה שלנו "ש", נמצאת מימין. את זוג השווים ניתן לרשום כך או כך.
 
 <div id="container" align="center">
-<img src="cryptography/img04.png" />
+<img class="img-responsive" src="cryptography/img04.png" />
 <br><br>
 </div>
 
 נזכיר כי בעברית "ממוצעת", סדר האותיות הוא
 
 <div id="container" align="center">
-<img src="cryptography/img05.png" />
+<img class="img-responsive" src="cryptography/img05.png" />
 <br><br>
 </div>
 
 ועל כן ההשערה הסבירה ביותר היא שמפתח ההחלפה המקורי (בסדר לא אלפביתי, דבר שאין לו משמעות) היה
 
 <div id="container" align="center">
-<img src="cryptography/img06.png" />
+<img class="img-responsive" src="cryptography/img06.png" />
 <br><br>
 </div>
 

@@ -11,13 +11,13 @@ layout: appendix
 
 
 <div id="container" align="center">
-  <img src="img02.png" title=""/>
+  <img class="img-responsive" src="img02.png" title=""/>
 </div>
 <br>
 <br>
 <br>
 <div id="container" align="center">
-  <img src="img02.png" title=""/>
+  <img class="img-responsive" src="img02.png" title=""/>
 </div>
 <br>
 <br>

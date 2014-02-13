@@ -12,7 +12,7 @@ layout: appendix
 <br>
 
 <div id="container" align="center">
-  <img src="img26.png" title=""/>
+  <img class="img-responsive" src="img26.png" title=""/>
 </div>
 <br>
 <br>
@@ -20,7 +20,7 @@ layout: appendix
 **נתונה תכנית המחשב הבאה, שכתובה בפקודות מילוליות:**
 
 <div id="container" align="center">
-  <img src="img27.png" title=""/>
+  <img class="img-responsive" src="img27.png" title=""/>
 </div>
 <br>
 

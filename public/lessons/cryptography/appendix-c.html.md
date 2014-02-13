@@ -11,7 +11,7 @@ layout: appendix
 <br>
 
 <div id="container" align="center">
-  <img src="img05.png" title=""/>
+  <img class="img-responsive" src="img05.png" title=""/>
 </div>
 <br>
 <br>
