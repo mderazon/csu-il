@@ -1,11 +1,24 @@
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
 body {
-  direction: rtl;
   font-family:
     "Helvetica Neue",
     Helvetica,
     Arial,
-    "Alef Hebrew",
     sans-serif;
   font-size: 17px;
 }
+
+.navbar-brand, .navbar-nav, h1, h2, h3 {
+ font-family:
+   'Open Sans Hebrew',
+   serif
+   Helvetica,
+   Arial,
+   sans-serif;
+}
+
+.navbar-brand {
+ letter-spacing:1px
+}
+
