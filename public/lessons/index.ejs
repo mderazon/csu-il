@@ -3,33 +3,33 @@
   <br>
 </div>
 
-</div>
 <br>
-<% for(var key in public.lessons._data) {%>
-  <% if (key !== 'index') { %>
-  <% var lesson = public.lessons._data[key]%>
 
+<% for(var key in public.lessons._data) {%>
+<% if (key !== 'index') { %>
+<% var lesson = public.lessons._data[key]%>
+<div class="container">
   <div class="well container">
-    <div class="row">
-      <div class="span9">
-        <a href="<%= key %>.html"><h1><%= lesson.title %></h1></a>
-        <h3><%= lesson.description %></h3>
-        <br>
+    <div class="col-sm-9">
+      <a href="<%= key %>.html"><h1><%= lesson.title %></h1></a>
+      <h3><%= lesson.description %></h3>
+      <br>
+      <div>
+        <span class="badge">נכתב ב <%= lesson.date.toString() %></span>
+        <br><br>
         <div>
-          <span class="badge badge-success">נכתב ב</span>
-          <br><br>
-          <div>
-            <% for(var tag in lesson.tags) {%>
-              <span class="label label-info"><%= lesson.tags[tag] %></span>
-            <% } %>
-          </div>
+          <% for(var tag in lesson.tags) {%>
+          <span class="label label-info"><%= lesson.tags[tag] %></span>
+          <% } %>
         </div>
       </div>
-      <div class="span3" style="vertical-align: middle">
-        <img src="<%= key %>/thumbnail.png" height="140" width="140">
-      </div>
+    </div>
+    <div class="col-sm-3">
+      <br>
+      <img class="img-rounded" src="<%= key %>/thumbnail.png" height="140" width="140">
     </div>
   </div>
+</div>
   <% } %>
 <% } %>
 

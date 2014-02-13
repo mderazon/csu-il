@@ -2,19 +2,19 @@
 
 <% lesson = public.lessons._data[current.source] %>
 <div class="container">
-  <div class="row-fluid">
+  <div class="row">
     <div class="page-header">
       <h1><%= lesson.title %><br><small><%= lesson.description %></small></h1>
     </div>
     <br />
 
-    <div class="container-fluid">
-      <div class="span10">
+    <div class="container">
+      <div class="col-md-10">
         <%- yield %>
         <br><br>
         <div id="disqus_thread" class="span9 offset1"></div>
       </div>
-      <div class="span2">
+      <div class="col-md-2">
       </div>
 
     </div>

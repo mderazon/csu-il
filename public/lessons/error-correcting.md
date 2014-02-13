@@ -10,7 +10,7 @@
 בקשי מאחד הילדים לסדר על הלוח ריבוע של 5 על 5 קלפים, בתבנית שרירותית כלשהי, כרצונו:
 
 <div id="container" align="center">
-  <img src="error-correcting/img01.png" />
+  <img src="error-correcting/img01.png" class="img-responsive"/>
 </div>
 
 כעת, כאילו בדרך אגב, הוסיפי עוד שורה ועוד טור של קלפים לריבוע שהילד יצר, "כדי לעשות את הקסם יותר קשה".  התוצאה תהייה ריבוע של 6 על 6 קלפים:
