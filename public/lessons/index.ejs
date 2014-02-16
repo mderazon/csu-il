@@ -1,3 +1,4 @@
+<div class="container">
 <div class="span10">
   <h1>ברוכים הבאים!</h1>
   <br>
@@ -8,7 +9,7 @@
 <% for(var key in public.lessons._data) {%>
 <% if (key !== 'index') { %>
 <% var lesson = public.lessons._data[key]%>
-<div class="container">
+
   <div class="well container">
     <div class="col-sm-9">
       <a href="<%= key %>.html"><h1><%= lesson.title %></h1></a>
@@ -29,9 +30,9 @@
       <img class="img-rounded" src="<%= key %>/thumbnail.png" height="140" width="140">
     </div>
   </div>
-</div>
+
   <% } %>
 <% } %>
-
+</div>
 
 

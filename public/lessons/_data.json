@@ -1,6 +1,7 @@
 {
   "index": {
-    "layout": "../_layout"
+    "layout": "../_layout",
+    "description": "שיעורים"
   },
   "binary-numbers": {
     "title": "נקודות למחשבה",
