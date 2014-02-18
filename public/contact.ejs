@@ -1,0 +1,33 @@
+<div class="container">
+
+<div class="jumbotron">
+  <h1>צרו קשר</h1>
+</div>
+
+	<p>לכל בקשה או שאלה אנחנו כאן</p>
+	<br>
+
+  <form id="form" action="/contact-submit" method="POST" role="form">
+
+  	<div class="row form-group">
+      <div class="col-sm-3">
+        <input id="name" name="name" type="text" class="form-control" placeholder="שם" required>
+      </div>
+      <div class="col-sm-3">
+          <input id="email" name="email" type="email" class="form-control" placeholder="כתובת אימייל" required>
+      </div>
+    </div>
+
+    <div class="row form-group">
+    	<div class="col-sm-6">
+    		<textarea id="message" name="message" class="form-control" placeholder="ההודעה" rows="5" required></textarea>
+    	</div>
+    </div>
+
+    <div class="form-group">
+      <button id="submit-btn" type="submit" class="btn btn-primary btn-lg" onclick="this.disabled=true; this.value='Please Wait...'; this.form.submit()">
+        שלח
+      </button>
+    </div>
+  </form>
+</div>

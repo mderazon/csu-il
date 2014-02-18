@@ -1,27 +1,37 @@
-// Create Server and Express Application
-var express = require('express');
-var http = require('http');
+var express = require("express");
+var harp = require("harp");
 var app = express();
-var docpad = require('docpad');
-var server = http.createServer(app).listen(process.env.PORT || 8080);
+var mailer = require('./mailer');
 
-// Add our Application Stuff
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
-
-// Add DocPad to our Application
-var docpadInstanceConfiguration = {
-    // Give it our express application and http server
-    serverExpress: app,
-    serverHttp: server,
-    // Tell it not to load the standard middlewares (as we handled that above)
-    middlewareStandard: false
-};
-var docpadInstance = docpad.createInstance(docpadInstanceConfiguration, function(err){
-    if (err)  return console.log(err.stack);
-    // Tell DocPad to perform a generation, extend our server with its routes, and watch for changes
-    docpadInstance.action('generate server watch', function(err){
-        if (err)  return console.log(err.stack);
-    });
+app.configure(function(){
+  app.use(express.static(__dirname + "/public"));
+  app.use(harp.mount(__dirname + "/public"));
 });
+
+// to get the contact form data
+app.use(express.json());
+app.use(express.urlencoded());
+
+app.post('/contact-submit', function(req, res, next) {
+  var payload = {
+    email: req.body.email,
+    name: req.body.name,
+    message: req.body.message,
+  };
+  if (!payload.email || !payload.name || !payload.message) {
+    return res.send(400, 'One of the fields is missing...');
+  }
+
+  mailer(payload, function(err, response) {
+    if (err) {
+      console.error('MAILER ERROR:', err);
+      return res.send(500);
+    }
+    console.log("Message sent: " + response.message);
+    res.redirect('/contact-confirmed');
+  });
+});
+
+var port = process.env.PORT || 8080;
+app.listen(port);
+console.log("listening on port", port);

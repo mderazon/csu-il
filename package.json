@@ -27,21 +27,13 @@
   },
   "dependencies": {
     "express": "3.x",
-    "docpad": "6.x",
-    "docpad-plugin-downloader": "2.x",
-    "docpad-plugin-cleanurls": "2.x",
-    "docpad-plugin-coffeescript": "2.x",
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-less": "2.x",
-    "docpad-plugin-marked": "2.x",
-    "docpad-plugin-partials": "2.x",
-    "docpad-plugin-related": "2.x",
-    "docpad-plugin-stylus": "2.x",
-    "docpad-plugin-text": "2.x",
-    "docpad-plugin-services": "~2.4.4",
-    "docpad-plugin-formmail": "2.0.1"
+    "bower": "*",
+    "harp": "*",
+    "nodemailer": "*"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "2.x"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
