@@ -3,8 +3,11 @@ var harp = require("harp");
 var app = express();
 var mailer = require('./mailer');
 
+var logger_format = ':remote-addr - - [:date] ":method :url" :status ":referrer" ":user-agent"';
+
 app.configure(function(){
   app.use(express.static(__dirname + "/public"));
+  app.use(express.logger(logger_format));
   app.use(harp.mount(__dirname + "/public"));
 });
 
