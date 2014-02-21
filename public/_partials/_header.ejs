@@ -11,9 +11,11 @@
 
     <!-- Our site title and description -->
     <%
+      // ugly hack for page title
       var data_source = current.path[0] === 'lessons' ? public.lessons : public
+      var _current = current.source.indexOf('appendix-') === 0 ? current.path[1] : current.source
     %>
-    <title> <%= data_source._data[current.source].description %></title>
+    <title> <%= data_source._data[_current].description %></title>
 
     <!-- Mobile viewport optimized: h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width" />
