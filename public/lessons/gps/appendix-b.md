@@ -1,9 +1,3 @@
-```
-parent_lesson: gps
-order: 2
-layout: appendix
-```
-
 # דף פעילות מספר 2 #
 
 נא לגזור ל-4 חלקים. יש לתת ציור לכל תלמיד.

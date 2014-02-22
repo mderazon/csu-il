@@ -1,9 +1,3 @@
-```
-parent_lesson: gps
-order: 1
-layout: appendix
-```
-
 # דף פעילות מספר 1 #
 
 נא סמן בצבע את נקודות החיתוך של המעגלים. 
