@@ -1,19 +1,21 @@
-var express = require("express");
-var harp = require("harp");
-var app = express();
+var express = require('express');
+var harp = require('harp');
+var logger = require('morgan');
+var body_parser = require('body-parser');
+
 var mailer = require('./mailer');
 
-var logger_format = ':remote-addr - - [:date] ":method :url" :status ":referrer" ":user-agent"';
+var app = express();
 
-app.configure(function(){
-  app.use(express.static(__dirname + "/public"));
-  app.use(express.logger(logger_format));
-  app.use(harp.mount(__dirname + "/public"));
-});
+var logger_format = ':remote-addr - - [:date] ":method :url" :status ":referrer" ":user-agent"';
+app.use(express.static(__dirname + "/public"));
+app.use(logger(logger_format));
+app.use(harp.mount(__dirname + "/public"));
+
 
 // to get the contact form data
-app.use(express.json());
-app.use(express.urlencoded());
+app.use(body_parser.json());
+app.use(body_parser.urlencoded({ extended: true }));
 
 app.post('/contact-submit', function(req, res, next) {
   var payload = {
