@@ -3,6 +3,9 @@
     "layout": "../_layout",
     "description": "שיעורים"
   },
+  "print": {
+    "description": ""
+  },
   "binary-numbers": {
     "title": "נקודות למחשבה",
     "description": "מספרים בינאריים",

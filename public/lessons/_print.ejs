@@ -1,0 +1,10 @@
+<% var lesson = current.path[1] %>
+<%- partial('index') %>
+
+<% var contents = public.lessons[lesson]._contents %>
+<% for(var i in contents) { %>
+  <% var appendix = contents[i] %>
+  <% if (appendix.indexOf('appendix-') !== -1) { %>
+    <%- partial(appendix.split('.md')[0]) %>
+  <% } %>
+<% } %>

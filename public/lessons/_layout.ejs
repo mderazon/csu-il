@@ -1,6 +1,15 @@
-<%- partial("../_partials/_header") %>
+<%
+  lesson = public.lessons._data[current.path[1]]
+  print_version = current.source === 'print'
+%>
+<% if (print_version) { %>
+  <%- partial("../_partials/_header-print") %>
+<% } else { %>
+  <%- partial("../_partials/_header") %>
+<% } %>
 
-<% lesson = public.lessons._data[current.path[1]] %>
+
+
 <div class="container">
   <div class="row">
 
@@ -8,6 +17,9 @@
     <div class="page-header">
       <h1><%= lesson.title %><br><small><%= lesson.description %></small></h1>
     </div>
+      <% if (!print_version) { %>
+      <h4><a href="print">גרסה להדפסה</a></h4>
+      <% } %>
     <% } %>
 
     <br />
@@ -30,7 +42,7 @@
   </div>
 </div>
 
-<% if (lesson) { %>
+<% if (lesson && !print_version) { %>
 <script type="text/javascript">
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   var disqus_shortname = 'csu-il'; // required: replace example with your forum shortname
