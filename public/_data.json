@@ -10,5 +10,8 @@
   },
   "contact-confirmed": {
     "description": "תודה על התגובה"
+  },
+  "search-results": {
+      "description": "תוצאות החיפוש"
   }
 }
