@@ -8,9 +8,9 @@ var mailer = require('./mailer');
 var app = express();
 
 var logger_format = ':remote-addr - - [:date] ":method :url" :status ":referrer" ":user-agent"';
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/_public"));
 app.use(logger(logger_format));
-app.use(harp.mount(__dirname + "/public"));
+app.use(harp.mount(__dirname + "/_public"));
 
 
 // to get the contact form data
