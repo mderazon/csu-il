@@ -1,4 +1,4 @@
-## Computer Science Unplugged IL ##
+## Computer Science Unplugged IL [![Build Status](https://travis-ci.org/mderazon/csu-il.svg?branch=master)](https://travis-ci.org/mderazon/csu-il)
 
 Website: [http://www.csunplugged.org.il](http://www.csunplugged.org.il)
 
