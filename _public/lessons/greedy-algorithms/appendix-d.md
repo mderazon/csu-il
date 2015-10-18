@@ -1,10 +1,12 @@
-#דפי תמונות למכירה פומבית#
----
+# דפי תמונות למכירה פומבית #
+---
+
 <div id="container" align="center" style="width:70%">
   <img class="img-responsive" src="img06.png" title=""/>
 </div>
 
----
+---
+
 <div id="container" align="center">
   <img class="img-responsive" src="img07.png" title=""/>
 </div>
