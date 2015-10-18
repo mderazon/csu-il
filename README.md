@@ -1,5 +1,3 @@
-[![Build Status](https://drone.io/github.com/mderazon/csu-il/status.png)](https://drone.io/github.com/mderazon/csu-il/latest)
-
 ## Computer Science Unplugged IL ##
 
 Website: [http://www.csunplugged.org.il](http://www.csunplugged.org.il)

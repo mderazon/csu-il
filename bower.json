@@ -1,6 +1,0 @@
-{
-  "name": "cups-admin",
-  "dependencies": {
-    "bootstrap-rtl": "0.9.16"
-  }
-}
