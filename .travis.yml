@@ -1,0 +1,9 @@
+d2cb6b39712da2c4b0830523b08dcc587573e16d
+language: node_js
+node_js:
+  - "4.0"
+script: bash ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/mderazon/csu-il.git
+  - secure: "nHiTeK93u30wfnZkFL+2ftHrWzYfjFE8na33GUHa6mDJMCIwsTxF8P6djWgfKbh0thCpYpFf5BjOxqu0ScOtM68uJa1l322dR5ILnF9sQ0PTD+IvyOVIYYFJeFX5CtDg+kCEmuJsBmzq3uqVzzb/FiBeEkgKPUeJGsHrTdnhb2M="

@@ -32,7 +32,7 @@
     "nodemailer": "^1.3.0"
   },
   "scripts": {
-    "compile": "harp compile _public ./",
+    "compile": "harp compile _public out",
     "start": "node app.js"
   }
 }
