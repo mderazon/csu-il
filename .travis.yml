@@ -6,4 +6,4 @@ script: bash ./deploy.sh
 env:
   global:
   - GH_REF: github.com/mderazon/csu-il.git
-  - secure: "nHiTeK93u30wfnZkFL+2ftHrWzYfjFE8na33GUHa6mDJMCIwsTxF8P6djWgfKbh0thCpYpFf5BjOxqu0ScOtM68uJa1l322dR5ILnF9sQ0PTD+IvyOVIYYFJeFX5CtDg+kCEmuJsBmzq3uqVzzb/FiBeEkgKPUeJGsHrTdnhb2M="
+  - secure: "FDkfwejBlpHlJr4k5ZslkvxcKRr2SbEu785O2HP6uXnLc1ZLQ/4xQtExGlqyOHSBSHvb11zNkh4r4Os6nUIpmQq64HgASUz9moJgwdDGVs4R7QjryH4CYQMM+9ymG4pZUyj3qWmWGBtVXul3AEsc4U3uxMZ/oksvse4t4BRf1rE="
