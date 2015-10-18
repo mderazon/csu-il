@@ -1,4 +1,4 @@
-d2cb6b39712da2c4b0830523b08dcc587573e16d
+sudo: false
 language: node_js
 node_js:
   - "4.0"
