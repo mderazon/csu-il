@@ -7,6 +7,7 @@ mkdir out;
 
 # run harp compile script
 npm run compile
+cp CNAME out
 
 # go to the out directory and create a *new* Git repo
 cd out
