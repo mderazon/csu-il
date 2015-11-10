@@ -1,0 +1,347 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- Our site title and description -->
+    
+    <title> שיעורים</title>
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Icons -->
+      <link rel="shortcut icon" href="icons/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.2.0-rc2/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="/_styles/style.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+      <div class="visible-lg">
+        <a href="https://github.com/mderazon/csu-il"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">הוראת מדעי המחשב בקהילה</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="/lessons">שיעורים</a>
+            </li>
+            <li class="">
+              <a href="/about">אודות</a>
+            </li>
+            <li class="">
+              <a href="/contact">צרו קשר</a>
+            </li>
+          </ul>
+          <form class="navbar-form" role="search">
+            <div class="form-group">
+              <input type="text" id="st-search-input" class="st-search-input form-control"/>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+
+    
+    <div class="page-header">
+      <h1>אני אנווט<br><small>GPS - מערכת מיקום עולמית</small></h1>
+    </div>
+      
+      <h4><a href="print">גרסה להדפסה</a></h4>
+      
+    
+
+    <br />
+
+    <div class="container">
+      <div class="col-md-10">
+
+        <h1>הקדמה</h1><p>כולנו מוקפים היום במכשירים אלקטרוניים המשתמשים ביכולות המופלאות של ה- GPS. מטוסים,
+רכבים, מכשירים סלולריים, גורמים בטחוניים ואפליקציות באינטרנט כגון פייסבוק וגוגל משתמשים ב- GPS באופן שוטף.
+<br>
+GPS – Global Positioning System
+או בתרגום לעברית, מערכת מיקום עולמית הינה המצאה
+אמריקאית שיועדה בתחילה ליכולות צבאיות אך כיום כל אדם שבאמצעותו מקלט GPS יכול להשתמש בה.
+<br><br>
+המערכת פועלת באמצעות למעלה מ-24 לווינים המקיפים את כדור הארץ במסלול מסויים.
+ בנוסף קיימות תחנות קרקעיות המאפשרות שיפור דיוק ותיקון שגיאות משמעותי למערכת.
+בפשטות, הלווינים משדרים אות לכיוון כדור הארץ. כל מקלט שקולט ארבעה לווינים יכול לחשב את מיקומו
+באמצעות חישוב המרחק בינו לבין כל לווין.
+<br><br>
+חשוב לציין שאין הכוונה לדבר על נוסחאות מתמטיות מורכבות והשיטה המפורטת שבה עובדת המערכת.
+<br><br></p>
+<h3>מטרת השיעור</h3><p>מטרת השיעור הינה להסביר את העקרונות היסודיים על פיהם פועל ה- GPS.
+לצורך ההפשטה אנו נתייחס לחיתוך של שלושה לווינים ולא ארבעה אשר
+דרושים לקבלת נקודה מדוייקת ונתעלם מהתחנות הקרקעיות המאפשרות דיוק משופר.
+<br><br></p>
+<p><strong>ציוד לשיעור:</strong></p>
+<ul>
+<li>ארבעה צעיפים או חוטים באורך שווה (רצוי באורך של למעלה ממטר)</li>
+<li>דפי עבודה מודפסים</li>
+<li>שתי מטפחות / צעיפים לקשירת עיניים</li>
+<li>כדורגל, כדורסל, כדור גלובוס או כל כדור אחר להדגמת פיזור הלווינים
+<br><br></li>
+</ul>
+<p><strong>השיעור יתחלק לשלושה נושאים:</strong>
+<br></p>
+<ol>
+<li>חישוב מרחק על פי זמן  - משחק כיסאות.
+<br></li>
+<li>חיתוכים של מעגלים - דיאגרמה ודפי עבודה.
+<br></li>
+<li>מיקום לווינים - שרטוטים ומשחק בכיתה.
+<br><br></li>
+</ol>
+<p>#1. חישוב מרחק על פי זמן:#</p>
+<p>בחר 8 מתנדבים. הושב את כולם בשורה על הכסאות.
+קשור את עיניו של התלמיד הימני ביותר, הוצא תלמיד אחד מאמצע השורה. רשום פתק והעבר אותו מהילד היושב בכסא השמאלי ביותר עד לתלמיד עם העיניים המכוסות.
+<br>
+כעת, שאל את התלמיד שקיבל את הפתק כמה ילדים ישנם בין הכסא שעליו הוא יושב לבין הכסא השמאלי ביותר.
+סביר להניח שתשובתו תהא 8 (בהתבסס על זכרונו של כמות הילדים שנבחרה).
+<br>
+עתה, העבר פתק נוסף ובקש מהילדים להגיד את שמם כשהם מקבלים את הפתק.
+ניתן להמשיך ולעבור להקראת המספר 1 כאשר כל תלמיד מקבל את הפתק.
+לבסוף, בקש מהתלמידים לספור בצורה עולה, קרי 1,2,3,4,5,6,7,8. הסבר לתלמידים שבאופן זה גם אם יהיו 1,000,000 תלמידים בשורה, התלמיד האחרון ידע בדיוק כמה תלמידים היו בינו ובין התלמיד הראשון.
+<br>
+<u></u></p>
+<h4>הפעלה נוספת 1:</h4><p>
+ניתן להדגים כיצד ביכולתנו לחשב באופן די מדוייק את כמות התלמידים שהעבירו את הפתק מבלי שיצטרכו לספור בצורה עולה.
+<br>
+ראשית, עלינו למדוד כמה זמן <u>בממוצע</u> לוקח לכל תלמיד להעביר את הפתק.
+חשוב להסביר לתלמידים שככל שנקח יותר תלמידים כך הממוצע יהיה יותר מדוייק.
+שנית, יש למדוד את כמות הזמן מהרגע שהתחלנו להעביר את הפתק ועד שהוא הגיע לתלמיד עם העיניים המכוסות. לבסוף, נחלק את הזמן הכולל בזמן הממוצע להעברת פתק ונקבל את מספר התלמידים.
+בשיטה זו גם אם התלמידים לא סופרים בצורה עולה (....,1,2) ניתן להעריך בצורה די מדוייקת כמה תלמידים העבירו את הפתק.
+<br><br>
+הערה: חשוב להסביר לתלמידים שעליהם להעביר את הפתק בקצב רגיל, תצפו לכך שמספר תלמידים &quot;יתמהמהו&quot; עם הפתק כדי לשבש את חישוב הממוצע.
+<br>
+<u></u></p>
+<h4>הפעלה נוספת 2:</h4><p>
+בחר 4 מתנדבים. סדר את המתנדבים כך שישבו בכל אחת מהפינות בכיתה. בחר מתנדב נוסף והעמד אותו במרכז הכיתה וכסה את עינייו. כל אחד מארבעת המתנדבים בפינות יקרא בתורו למתנדב שיעמוד במרכז הכיתה. הזז את התלמיד למספר מקומות שונים בכיתה. בכל נקודה כל אחד מארבעת התלמידים יקרא למתנדב שבמרכז הכיתה
+<u> בשמו של המתנדב</u>
+בתורו. לפי עוצמת הקול הוא יוכל להעריך ליד איזה תלמיד הוא הכי קרוב.
+<br><br>
+הערה: חשוב להבהיר למתנדבים לקרוא למתנדב במרכז הכיתה בקול &quot;רגיל&quot; (הדגימו בעצמכם קריאה למתנדב במרכז הכיתה) ושאין באפשרותם לצעוק, אחרת הפעילות תפגע.</p>
+<p>#2. חיתוכים של מעגלים:#</p>
+<p>חלק את
+<a href="appendix-a.html">דף פעילות מספר 1</a>
+. לאחר כ-5 דקות החל בהדגמה.
+<br><br>
+צייר מעגל.</p>
+<div id="container" align="center">
+<img src="img02.png" title="">
+</div>
+
+<p><br>
+צייר מעגל נוסף שיצור חיתוך.
+<br></p>
+<div id="container" align="center">
+<img src="img03.png" title="">
+</div>
+
+<p><br>
+בקש מהתלמידים לסמן את נקודות החיתוך בין המעגלים.
+<br>
+כעת, צייר שלושה מעגלים.
+<br></p>
+<div id="container" align="center">
+<img src="img04.png" title="">
+</div>
+
+<p><br>
+בקש מהתלמידים לציין את נקודת החיתוך בציור של שלושת המעגלים.
+הראה שהוא למעשה &quot;מסנן&quot; לנו אפשרות אחת מבין 2 האפשרויות שהיו לנו במצב הקודם (של 2 מעגלים נחתכים).
+הראה שבחיתוך של שלושה מעגלים יש לנו נקודת חיתוך אחת (למעשה אזור אחד שניתן להתייחס אליו
+כנקודה שחורה, באפשרותכם לצבוע את האזור כדי להבהיר את הנושא).
+נשאיר את הציור של שלשות המעגלים בפינת הלוח ככלי עזר להמשך השיעור.
+<br>
+כעת בחר מתנדב וכסה את עיניו. הסבר לו מראש שכאשר הצעיף/חוט מתוח הוא במרחק של מטר ממך.
+ למעשה, המתנדב ישמש כמקלט ואתה כלווין.
+  צור מתיחות (החוט מתוח ולא רפוי) על החוט (מעתה נשתמש רק במונח חוט) ושאל אותו למרחקו ממך.
+  כעת שאל אותו מה מיקומו ביחס אליך.
+הראה לו ולכיתה שהוא בעצם במרחק בעל רדיוס קבוע.
+ ניתן להמחיש זאת בקלות.
+בקש מהמתנדב
+להתחיל ללכת ימינה או שמאלה (לבחירתו) אך עליו לשמור על החוט מתוח במשך כל תנועתו.
+בפועל הוא יבצע מעגל סביבך.
+<br>
+<br>
+כעת בחר מתנדב נוסף. הוא ישמש כ&quot;לווין&quot; נוסף.
+ כעת נראה לתלמידים שישנן רק שתי נקודות אפשריות (נזכיר שהחוטים באותו אורך).
+ בדיוק כמו בציור המעגלים.
+<br></p>
+<div id="container" align="center">
+<img src="img05.png" title="">
+</div>
+
+<p><br>
+בקש מתנדב שלישי אשר ישמש כלווין שלישי והראה שכעת התלמיד לא יכול &quot;להתקדם&quot; למקום אחר
+מבלי לקרוע את אחד החוטים.
+<br></p>
+<div id="container" align="center">
+<img src="img06.png" title="">
+</div>
+
+<p><br>
+חזור לציור המעגלים והשווה בין הסיטואציה הנוכחית לחיתוך שלושת המעגלים.</p>
+<p>#3. מיקום לווינים:#</p>
+<p>בחר ארבעה מתנדבים. אחד ישמש כמקלט (יש לכסות את עיניו) ושלושה ישמשו כלווינים.
+<br>
+מקם את שלושת הלווינים בשורה בצמוד לאחת הדפנות בכיתה.
+המחש לתלמידים שלא ניתן לייצר מצב בו כל שלושת החוטים מתוחים.
+נסביר לתלמידים שבכל רגע נתון עלינו לייצר מצב שבו שלושה לוויינים מסתכלים עלינו.
+ הסבירו שחוט מתוח מדמה את המצב שהלווין מסתכל עלינו (קשר עין בין הלווין למקלט).
+<br><br>
+הערה: ניתן להסביר את המונח קשר עין בפשטות. בחרו תלמיד והסתכלו עליו - זה קשר עין. כעת התכופפו מתחת לשולחן והראו לתלמידים שבמצב הזה אין לכם קשר עין עם התלמיד הנ&quot;ל.
+<br><br>
+לאחר הפעילות נשתמש בכדור שהבאנו.
+הכדור ידמה לנו את צורתו של כדור הארץ.
+בקש מהתלמידים פתרונות אפשריים לפריסת הלוויינים סביב הכדור כך שבכל רגע נתון על כל נקודה על פני הכדור יסתכלו לפחות שלושה לווינים.
+<br><br>
+<u></u></p>
+<h4>הרחבת הפעילות - אופציונאלי:</h4><p>
+הערה: הרחבה זו יותר מורכבת ותלויה ברמת הבנת הכיתה של החומר עד כה.
+במידה ואתם
+חושבים שהרחבה זו לא מתאימה לכיתה או שלא נותר לכם זמן מספק פשוט וותרו על דוגמא זו ורק חלקו לתלמידים את הציור בדף פעילות מספר 2 המראה את פיזור הלווינים סביב כדור הארץ.
+<br><br>
+הסבר לתלמידים שהלווינים בחלל לא יכולים להשאר במקום ולכן עליהם להיות תנועה מתמדת.
+בנקודה זו יש להסביר שחוט מתוח מדגים לנו קשר עין בין הלווין למקלט. אולם במציאות אורך החוט
+(קרי, האות שנשלח מהלווין בחלל למקלט בכדור הארץ) אינו קבוע ומוגבל לאורך הצעיף.
+ ניתן להמחיש זאת על ידי 2 תלמידים שינועו בין השולחנות בכיתה.
+על התלמידים לחשוב על פתרון בו  בכל רגע נתון ישנם שלושה לווינים לפחות שנמצאים בקשר עין עם המקלט.
+פיזור של ארבעה לווינים (מעל לתקרה, מתחת לרצפה, מאחורי הכיתה ומלפניה) הוא פתרון טוב.
+באותה מידה גם פתרון של שישה לווינים (מעבר כל דופן של הכיתה).
+<br>
+אך במידה וכל לווין עולה 200 מיליון דולר.
+כיצד נגיע למספר מינימלי (הקטן ביותר) של לווינים שיאפשרו לנו קשר עין עם כל מקלט על פני הכדור?
+<br><br>
+בשלב זה נראה לתלמידים את הפתרון על ידי הציור המצורף.
+<br>
+חלק לתלמידים את הציור ב
+<a href="appendix-b.html">דף פעילות מספר 2</a>
+הסבר שזוהי החלוקה שהתבררה כנכונה ביותר - הלווינים נעים בתיאום, הכדור עצמו גם נע סביב עצמו וסך הכל אנו מייצרים חלוקת פלחים יעילה על פני הכדור.
+בחלוקה זו ישנם בסך הכל שישה מסלולים ובכל מסלול ארבעה לווינים במרחק קבוע.
+מסיבה זו המערכת חייבת להשתמש בכ-24 לווינים פעילים על מנת ליצור קשר עין עם כל מקלט על פני כדור הארץ.
+<br></p>
+<div id="container" align="center">
+<img src="img08.png" title="">
+</div>
+
+<p><br></p>
+<h1>סיכום</h1><p>נסכם בכך שהלווינים משדרים אות אותו קולט המקלט.
+ באמצעות תרגום זמן למרחק (חלק 1) ושיטות חיתוך (חלק 2) אנו יודעים למקם כל מקלט.
+  באמצעות חלוקה נכונה (חלק 3) אנו יכולים למצוא כל מקלט (חיתוך של נקודה כמו בציור של שלושת המעגלים בפינת הלוח) בעולם.
+<br><br>
+שאלת בונוס לתלמידים – מתי בכל זאת אין קליטה? (התשובה המתבקשת הינה מנהרה).
+בקשו מהתלמידים שבפעם הבאה שאבא או אמא נוהגים עם GPS מתחת למנהרה להזכיר להם שה-GPS לא יעבוד כל עוד הם במנהרה.</p>
+<p><u></u></p>
+<h4>קישורים נוספים בנושא:</h4><p></p>
+<ol>
+<li><a href="http://he.wikipedia.org/wiki/GPS">ויקיפדיה - ג&#39;י.פי.אס</a>
+<br></li>
+<li><a href="http://www.ynet.co.il/yaan/0,7340,L-168280-MTY4MjgwXzI4MTc3MjA2Nl8xNDg2ODcyMDAeq-FreeYaan,00.html">אנציקלופדיית Ynet– מערכת מיקום גלובלית</a>
+<br></li>
+<li><a href="http://www.jeepolog.com/forums/content.php?r=1452">התאמה בין מקלט GPS למפה</a>
+<br></li>
+<li><a href="http://www.geoinfo.technion.ac.il/_downloads/presentation.asp?fname=gps">סרטון המחשה של הטכניון – כיצד פועל GPS</a>
+<br></li>
+<li><a href="http://scienceblog.galbarak.co.il/?p=60">בלוג לענייני מדע – איך זה עובד?</a>
+<br></li>
+<li><a href="http://he.wikipedia.org/wiki/AGPS">AGPS</a></li>
+</ol>
+        <br><br>
+
+        
+        <div id="disqus_thread" class="span9 offset1"></div>
+        
+
+      </div>
+      <div class="col-md-2">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'csu-il'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    var Swiftype = window.Swiftype || {};
+      (function() {
+        Swiftype.key = 'FbKv4mDi54Z5vEeYzz8i';
+        Swiftype.renderStyle = 'new_page';
+        Swiftype.resultPageURL = '/search-results';
+
+        /** DO NOT EDIT BELOW THIS LINE **/
+        var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+        script.src = "//s.swiftypecdn.com/embed.js";
+        var entry = document.getElementsByTagName('script')[0];
+        entry.parentNode.insertBefore(script, entry);
+      }());
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45238302-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
+

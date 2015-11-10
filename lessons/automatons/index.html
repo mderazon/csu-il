@@ -1,0 +1,322 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- Our site title and description -->
+    
+    <title> שיעורים</title>
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Icons -->
+      <link rel="shortcut icon" href="icons/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.2.0-rc2/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="/_styles/style.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+      <div class="visible-lg">
+        <a href="https://github.com/mderazon/csu-il"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">הוראת מדעי המחשב בקהילה</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="/lessons">שיעורים</a>
+            </li>
+            <li class="">
+              <a href="/about">אודות</a>
+            </li>
+            <li class="">
+              <a href="/contact">צרו קשר</a>
+            </li>
+          </ul>
+          <form class="navbar-form" role="search">
+            <div class="form-group">
+              <input type="text" id="st-search-input" class="st-search-input form-control"/>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+
+    
+    <div class="page-header">
+      <h1>מה המצב<br><small>אוטומט סופי דטרמיניסטי</small></h1>
+    </div>
+      
+      <h4><a href="print">גרסה להדפסה</a></h4>
+      
+    
+
+    <br />
+
+    <div class="container">
+      <div class="col-md-10">
+
+        <h3>הנחיות כלליות</h3><ul>
+<li><p>פעילות זו אינה דורשת ידע מוקדם מצד הקבוצה.</p>
+</li>
+<li><p>ניתן להעביר אותה במספר רמות של קושי. לאורך המערך מוצגות נקודות דיון למתקדמים, ולכן מומלץ להעביר אותה לאחר היכרות עם הקבוצה ולהתאימה לרמתם.</p>
+</li>
+<li><p>במערך שיעור זה נתייחס רק לאוטומט סופי דטרמיניסטי (אותו נכנה פשוט אוטומט על מנת שמירה על הפשטות) ולא ניכנס כלל להגדרת דטרמיניסטי / לא דטרמיניסטי.</p>
+</li>
+</ul>
+<h1>מבוא</h1><p>עיסוק באוטומט סופי דטרמניסטי למעשה מתחלק לשתי מורכבויות: היכרות עם הצורה שבה הוא עובד וכיצד האוטומט רץ (או מנתח קלט), וכן השימושים שניתן לעשות באוטומטים על מנת לבצע יישומים אחרים.
+בראש ובראשונה השיעור עוסק בהיכרות עם צורת ריצת האוטומט וכיצד אוטומט קיים עובד בהתאם לקלט מסוים. כמו כן בהמשך השיעור אנו למדים כיצד באמצעות המנגנון הזה, אנחנו יכולים לבנות מכונה משלנו אשר תשמש אותנו לצרכים אחרים, כלומר הפיכתו של האוטומט במקרה זה לאמצעי ולא למטרה העיקרית.
+דוגמאות נפוצות לשימוש באוטומטים הינן עיבוד אותיות או מילים במסמך על מנת לחלץ מתוכם מילים מעניינות (כמו מספרי טלפון, כתובות אימייל וכו&#39;), או אפילו לנתח את הטקסט של תכנית מחשב אחרת על מנת להעביר אותה קומפילציה או אינטרפרטציה.
+כאמור, חלקו הראשון של השיעור יעסוק בעקיפין בדרך פעולתו של אוטומט באופן כללי, החלק השני יתמקד בצורה הפורמלית יותר של אוטומט, ויעסוק בתחילה ביצירת אוטומט באופן פורמלי בהתאם לצורך יישומי ולבסוף בניתוח ריצתם של אוטומטים פורמליים קיימים. חלקו השלישי של השיעור הוא אופציונלי ועוסק בייצוג אחר של אוטומטים
+שפות רגולריות (לחלוטין לא חובה).
+מטרת השיעור היא בעיקר הצגתו של מנגנון פעולה, ולאחר מכן הצגת יישומו לצרכים יישומיים.</p>
+<h2>אי המטמון</h2><p>במשחק הבא המטרה של הילדים היא למצוא את אי המטמון.
+אוניות פיראטים ידידותיות מפליגות לאורך מספר מסלולים קבוע, ומציעות את שירותיהן למחפשי הרפתקאות.
+מטרת הילדים היא למצוא את המסלול הטוב ביותר לאי המטמון.</p>
+<ul>
+<li><p>לכל אי שאליו מגיעים ניתן לבקש את שירותיה של ספינה א&#39; או ב&#39;, אך לא את שתיהן.</p>
+</li>
+<li><p>הפיראט על האי יבשר לנו לאיזה אי לוקחת אותנו ספינה א&#39; או
+ספינה ב&#39;, אך לאף פיראט אין את המפה של כל האיים, ולכן יודע  לספר רק על הספינות שיוצאות מהאי שלו.</p>
+</li>
+<li><p>הילדים ישתמשו במפות משלהם שאותן הם ימלאו לאורך הפעילות.</p>
+</li>
+</ul>
+<h1>פעילות מספר 1</h1><ol>
+<li><p>ציירו את מפה 1 הבאה על הלוח:
+<img src="img01.png" title="" style="width: 50%"></p>
+</li>
+<li><p>צלמו את
+<a href="appendix-a.html">שלושת הכרטיסיות הבאות</a>,
+וחלקו אותם לשלושה מתנדבים.
+שימו לב שהמסלולים על הכרטיסיות שונים מהמסלולים שמופיעים בפעילות עצמה.</p>
+</li>
+<li><p>התחילו מ<strong>אי הפיראטים</strong> ובקשו את אוניה א&#39;.
+המתנדבת המקומית תכוון אתכם ל<strong>מפרץ החורבות</strong>.
+סמנו מסלול זה על המפה.
+ב<strong>מפרץ החורבות</strong> בקשו שוב את אוניה א&#39; ותופנו בחזרה ל<strong>אי הפיראטים</strong>.
+סמנו זאת על המפה.
+הפעם בקשו את אוניה ב&#39;.
+סמנו זאת על המפה.
+הפעם תגיעו ל<strong>אי הגולגלות</strong>, ובשלב זה תיתקעו באי זה.</p>
+</li>
+<li><p>המפה הסופית אמורה להיראות כך:</p>
+</li>
+</ol>
+<p><img src="img05.png" title="" style="width: 50%"></p>
+<h1>פעילות מספר 2</h1><p>בחרו שבעה ילדים אשר יהיו ה&quot;איים&quot;.</p>
+<p>כל ילדה תחזיק כרטיסיה אשר תסמן את האי שלה, עם ההוראות הסודיות בגב הכרטיסייה.</p>
+<p>מקמו אותם באופן אקראי בכיתה (או מחוצה לה).</p>
+<p><img src="img06.png" title="" style="width: 50%"></p>
+<p>לשאר הילדים תינתן מפה ריקה, אשר באמצעותה ינווטו מ<strong>אי הפיראטים</strong> ל<strong>אי המטמון</strong>.</p>
+<p>במהלך הניווט הילדים צריכים למלא את המפה שלהם.</p>
+<p>לדוגמא כאשר ניגשים לילדה המחזיקה בכרטיסיית מפרץ החורבות ומבקשים את אוניה ב&#39; עליה לכוון אל אי הגולגלות.</p>
+<p><a href="appendix-b.html">הכרטיסיות עבור הפעילות</a>.</p>
+<p><a href="appendix-c.html">המפה עבור הפעילות</a>.</p>
+<p><u>הערה</u>:
+ישנן הרבה דרכים לנהל משחק זה, אחת הדרכים המומלצות היא לתת לכל
+מנווטת תור לבחירת צעד אחד בלבד, וכך ניתן לשמור על סדר וגם לתת לכל אחת מהילדות הזדמנות שווה.
+<strong><u>המפה הפתורה</u></strong>:</p>
+<p><img src="img15.png" title="" style="width: 50%"></p>
+<p>מי שמסיימת מהר יכולה לנסות למצוא מסלול שני או יותר.</p>
+<h3>שאלות לדיון</h3><ul>
+<li><p>מה היא הדרך הקצרה ביותר (אפשר לצייר את המפה על הלוח)? <strong>ב-ב-א-ב</strong></p>
+</li>
+<li><p>מה יהיה מסלול מאוד איטי? <strong>ב-ב-א-א-א-ב-א-ב-א-ב</strong></p>
+</li>
+<li><p>מסלול מסויימים כוללים &quot;לולאות&quot;, להזמין מישהו ללוח למצוא אחד כזה.</p>
+</li>
+</ul>
+<p>לאחר שסיימנו את הפעילות ציירו המפה הסופית על הלוח והקיפו את האיים בעיגולים.</p>
+<p>נסביר שניתן לכנות את המפה אוטומט או מכונת מצבים.</p>
+<p>נתחיל להגדיר ולהסביר את המושג תוך כתיבה מפורטת על הלוח.</p>
+<p>בכל מאפיין\מגדיר של האוטומט נראה איך הוא בא לידי ביטוי בדוגמא שלנו מפעילות 1.</p>
+<h3>אוטומט מוגדר באמצעות המושגים הבאים:</h3><ul>
+<li><p><strong>הא&quot;ב -</strong> א&#39; וב&#39; מהפעילות הראשונה</p>
+</li>
+<li><p><strong>(קבוצת) המצבים -</strong> האיים</p>
+</li>
+<li><p><strong>המצב ההתחלתי -</strong> אי הפיראטים</p>
+</li>
+<li><p><strong>המצבים המקבלים -</strong> אי המטמון (מה היה קורה אם היה לנו מטמון על שני איים) – נקיף בעוד עיגול נוסף על הלוח</p>
+</li>
+<li><p><strong>המעברים בין מצב למצב -</strong> מסלולי אוניות הפיראטים</p>
+</li>
+</ul>
+<p><u>הערה</u>:
+התאימו את רמת הפורמליות בהתאם לקבוצה. יש שיעדיפו להציג את ההגדרה המאוד פורמלית הבאה:</p>
+<p><img src="img16.png" title="" style="width: 50%"></p>
+<p>שדורשת הרחבה מרובה... הסימונים והמושגים שתבחרו ההם לשיקולכם ולפי הכרתכם את הקבוצה (היו יצירתיים).</p>
+<h3>נקודות למתקדמים</h3><p>(ניתן להעמיק בנושאים אלו תוך המעבר על ההגדרות הקודמות)</p>
+<ul>
+<li><p>מהי קבוצה סופית?</p>
+</li>
+<li><p>דוגמא לקבוצה לא סופית? קבוצת המספרים (הטבעיים) למשל.</p>
+</li>
+<li><p>סימנים של תורת הקבוצות - המספר 1 שייך לקבוצת המספרים, הקבוצה &quot;המספרים הזוגיים&quot; מוכל בקבוצת המספרים.</p>
+</li>
+</ul>
+<h1>פעילות מספר 3</h1><p>ברצוננו ליצור אוטומט שיעזור לבלבילון (שם זמני) המילון העקשן שלנו לקבל אך ורק את המילים שהוא מעוניין בהן!</p>
+<ol>
+<li><p>בלבילון מעוניין לקבל רק מילים בעלות מספר זוגי של אותיות.</p>
+</li>
+<li><p>בלבילון מעוניין לקבל רק מילים בנות 7 אותיות.</p>
+</li>
+<li><p>בלבילון מעוניין לקבל רק את המילים: &quot;מוזיקה&quot;, &quot;ים&quot;, &quot;מסיבה&quot;.</p>
+</li>
+</ol>
+<p>כל פעם הציגו בפני הקבוצה את התנאים של בלבילון, ובחרו מתנדב שיצייר את האוטומט על הלוח לפי הוראותיהם של שאר חברי הקבוצה. כמובן במידה והם מתקשים הדריכו אותם. הסבו את תשומת ליבם לאילו מאפיינים בדרישות, בשפה (מושג שנרחיב בהמשך) עזרו לכם לדעת איזה אוטומט לייצר.</p>
+<p>בכל פעם, לאחר מציאת הפתרון, נעבור על האוטומט שקיבלנו ונשאל מס&#39; שאלות בכדי לראות שהפנמנו את ההגדרות: &quot;כמה מצבים יש לנו?&quot;, &quot;מי המצב המקבל?&quot;, וכו&#39;...</p>
+<p><a href="appendix-d.html">פתרונות לפעילות מספר 3</a>.</p>
+<h3>נקודות למתקדמים</h3><ul>
+<li><p>האוטומטים בדוגמאות 2 ו-3 מכילים &quot;בור&quot; כלומר מצב שאי אפשר לקבל יותר את המילה, ולעומת זאת בדוגמא 1 אנחנו יכולים  להמשיך ולקרוא את המילה - הקלט, ואולי עוד לקבל אותה.</p>
+</li>
+<li><p>בדוגמאות 2 ו-3 ניתן לזהות מאפיינים שניתן להכליל אותם:</p>
+<ul>
+<li><p>כאשר נרצה לקבל אורך מילה מסוימת תמיד תיווצר שרשרת מצבים באורך הנדרש + 2 (מצב התחלה ומצב בור)</p>
+</li>
+<li><p>כאשר אנחנו רוצים לקבל מילים ספציפיות יהיו לנו שרשראות
+מצבים לכל מילה, ומספר מצבים מקבל כמספר המילים. שימו  לב שהמסלול למילים &quot;מסיבה&quot; ו&quot;מוזיקה&quot; יכול להתחיל במסלול משותף ואז להתפצל, מה קורה אם מילה אחת מוכלת בשנייה?</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>פעילות מספר 4</h1><p><a href="appendix-e.html">דף פעילות מספר 4</a>.</p>
+<p> מילים שמתחילות ב-א&#39; ונגמרות ב-ת&#39;, דף עבודה אישית.
+ (אפשרי גם כדף עבודה לשיעור לאחר מכן לחזרה על החומר &#9786;).</p>
+<h1>למתקדמים</h1><p><strong>החלק הבא של השיעור מעמיק מעט גם לעולם השפות הרגולריות.</strong></p>
+<p>ראינו שהאוטומט בעצם מגדיר לנו שפה.</p>
+<p>שפה שאפשר לייצר אותה ע&quot;י אוטומט (סופי) היא שפה רגולרית.</p>
+<p>שפה רגולרית היא גם כזאת שאפשר לייצר ע&quot;י ביטוי רגולרי.</p>
+<p>מהו ביטוי רגולרי? נגדיר מספר סימנים מוסכמים של ביטויים רגולרים:</p>
+<ul>
+<li><p><strong>סוגריים ( ) -</strong>
+כמו בפעולות חשבון עוזרות לנו לסדר פעולות. נבצע קודם את מה שבסוגריים</p>
+</li>
+<li><p><strong>או | -</strong>
+b או את a משמעותו שנקבל לשפה את - a | b</p>
+</li>
+<li><p><strong>כוכב * -</strong>
+מופע אחד או יותר:
+a*= (מילה ריקה) \a\aa\aaa\aaaaaaaaaa.....
+(ab)*= (מילה ריקה) \ab\abab\ababab.......</p>
+</li>
+</ul>
+<p>נחזור לדוגמאות מפעילות 3 וניצור לשפות שהן מגדירות את הביטוי הרגולרי המתאים:</p>
+<p>דוגמא 0: ראשית נגדיר את האותיות שלנו בשפה העברית.
+[סימון] א-ת: א | ב | ג | ד | ................... | ת
+(סופיות יוצגו כרגילות או שניתן להוסיף גם סופיות)</p>
+<ol>
+<li>(א-ת א-ת)*</li>
+<li>א-ת א-ת א-ת א-ת א-ת א-ת א-ת</li>
+<li>ים | מסיבה | מוסיקה</li>
+</ol>
+<h1>פעילות מספר 5</h1><p>חלקו את
+<a href="appendix-f.html">דף פעילות מספר 5</a>
+בו מוצגים מספר ביטויים רגולריים.
+על התלמידים להבין מהי השפה שהביטוי הרגולרי מייצג - לכתוב אותה בכותרת המתאימה, ולצייר אוטומט מתאים.</p>
+<ol>
+<li><p>מילים שמתחילות ב-א&#39; ונגמרות ב-ת&#39;.</p>
+</li>
+<li><p>מילים באורך שהוא כפולה של 3.</p>
+</li>
+<li><p>חייבת להופיע במילה האות ר&#39; או האות מ&#39; או האות ז&#39;.</p>
+</li>
+</ol>
+        <br><br>
+
+        
+        <div id="disqus_thread" class="span9 offset1"></div>
+        
+
+      </div>
+      <div class="col-md-2">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'csu-il'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    var Swiftype = window.Swiftype || {};
+      (function() {
+        Swiftype.key = 'FbKv4mDi54Z5vEeYzz8i';
+        Swiftype.renderStyle = 'new_page';
+        Swiftype.resultPageURL = '/search-results';
+
+        /** DO NOT EDIT BELOW THIS LINE **/
+        var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+        script.src = "//s.swiftypecdn.com/embed.js";
+        var entry = document.getElementsByTagName('script')[0];
+        entry.parentNode.insertBefore(script, entry);
+      }());
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45238302-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
+
